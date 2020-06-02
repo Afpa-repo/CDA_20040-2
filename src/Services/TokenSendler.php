@@ -4,7 +4,9 @@ namespace App\Services;
 
 use App\Entity\User;
 use App\Entity\Token;
-use Twig \ Environment;
+use Twig\Environment;
+
+
 
 
 class TokenSendler
@@ -12,7 +14,7 @@ class TokenSendler
     private $mailer;
     private $twig;
      
-    public function  __construct(\Swift_Mailer $mailer, \Twig_Environment $twig)
+    public function  __construct(\Swift_Mailer $mailer, \Environment $twig)
     {
         $this->mailer = $mailer;
         $this->twig = $twig;

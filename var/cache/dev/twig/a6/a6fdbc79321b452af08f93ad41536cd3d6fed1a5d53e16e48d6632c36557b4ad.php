@@ -233,6 +233,6 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
 
     <a href=\"{{ path('products_new') }}\">Create new</a>
 {% endblock %}
-", "products/index.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\products\\index.html.twig");
+", "products/index.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\products\\index.html.twig");
     }
 }

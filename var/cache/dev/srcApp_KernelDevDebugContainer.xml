@@ -5218,6 +5218,13 @@
         <argument>make:migration</argument>
       </call>
     </service>
+    <service id=".service_locator.eUF.M9A" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="productsRepository" type="service" id="App\Repository\ProductsRepository"/>
+        <argument key="session" type="service" id="session"/>
+      </argument>
+    </service>
     <service id=".service_locator.o3htLhs" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5309,10 +5316,12 @@
         <argument key="tokenRepository" type="service" id="App\Repository\TokenRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.fOlv33o" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.knvi.TE" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\CartController::add" type="service" id=".service_locator.o3htLhs"/>
+        <argument key="App\Controller\CartController::index" type="service" id=".service_locator.eUF.M9A"/>
+        <argument key="App\Controller\CartController::remove" type="service" id=".service_locator.o3htLhs"/>
         <argument key="App\Controller\CategoriesController::delete" type="service" id=".service_locator.ux_g_Zz"/>
         <argument key="App\Controller\CategoriesController::edit" type="service" id=".service_locator.ux_g_Zz"/>
         <argument key="App\Controller\CategoriesController::index" type="service" id=".service_locator.LppTwsE"/>
@@ -5337,6 +5346,8 @@
         <argument key="App\Controller\SecurityController::register" type="service" id=".service_locator.z.LVZp4"/>
         <argument key="App\Controller\SecurityController::validateToken" type="service" id=".service_locator.LCLrK7Y"/>
         <argument key="App\Controller\CartController:add" type="service" id=".service_locator.o3htLhs"/>
+        <argument key="App\Controller\CartController:index" type="service" id=".service_locator.eUF.M9A"/>
+        <argument key="App\Controller\CartController:remove" type="service" id=".service_locator.o3htLhs"/>
         <argument key="App\Controller\CategoriesController:delete" type="service" id=".service_locator.ux_g_Zz"/>
         <argument key="App\Controller\CategoriesController:edit" type="service" id=".service_locator.ux_g_Zz"/>
         <argument key="App\Controller\CategoriesController:index" type="service" id=".service_locator.LppTwsE"/>
@@ -5867,12 +5878,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.fOlv33o"/>
+      <argument type="service" id=".service_locator.knvi.TE"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.fOlv33o"/>
+      <argument type="service" id=".service_locator.knvi.TE"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface" public="false">
       <argument type="collection"/>
@@ -6256,7 +6267,7 @@
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger" public="false"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.CmORmuK" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.fOlv33o"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.knvi.TE"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>

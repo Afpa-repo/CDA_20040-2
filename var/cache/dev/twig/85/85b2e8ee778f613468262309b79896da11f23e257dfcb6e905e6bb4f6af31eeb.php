@@ -81,6 +81,10 @@ class __TwigTemplate_7fda4ee4d325b4a6ba6a8afa3a0c7e9ec06306bbdeaf38dfaf2f82da583
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ group.group_id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
+<<<<<<< HEAD
 ", "group/_delete_form.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\group\\_delete_form.html.twig");
+=======
+", "group/_delete_form.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\group\\_delete_form.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

@@ -204,6 +204,10 @@ class __TwigTemplate_681931cad29d366b52076e762549c0298b72b4549b420cc485674a4ce61
         })|raw }}
     </div>
 {% endif %}
+<<<<<<< HEAD
 ", "@Twig/Exception/trace.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\trace.html.twig");
+=======
+", "@Twig/Exception/trace.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\trace.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

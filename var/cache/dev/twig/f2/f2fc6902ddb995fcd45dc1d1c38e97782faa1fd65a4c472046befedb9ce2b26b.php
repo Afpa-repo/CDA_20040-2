@@ -486,6 +486,10 @@ header .container { display: flex; justify-content: space-between; }
     .hidden-xs-down { display: initial; }
     .help-link { margin-left: 30px; }
 }
+<<<<<<< HEAD
 ", "@Twig/exception.css.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\exception.css.twig");
+=======
+", "@Twig/exception.css.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\exception.css.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

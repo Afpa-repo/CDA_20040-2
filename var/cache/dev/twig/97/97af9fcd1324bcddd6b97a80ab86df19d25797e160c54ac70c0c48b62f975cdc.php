@@ -226,6 +226,10 @@ class __TwigTemplate_f5395250e2eed391b8bfa08d4d3a2f721713efd8a1633189a1ce12fe5b5
 
     <a href=\"{{ path('provider_new') }}\">Create new</a>
 {% endblock %}
+<<<<<<< HEAD
 ", "provider/index.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\provider\\index.html.twig");
+=======
+", "provider/index.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\provider\\index.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

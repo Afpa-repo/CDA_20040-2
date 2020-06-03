@@ -479,6 +479,10 @@ class __TwigTemplate_37b9d28ca8b1ec79726b9593e4423735cff26a12fe897c1caa56e32307c
         </div>
     {% endfor %}
 {% endblock %}
+<<<<<<< HEAD
 ", "@WebProfiler/Collector/validator.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\validator.html.twig");
+=======
+", "@WebProfiler/Collector/validator.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\validator.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

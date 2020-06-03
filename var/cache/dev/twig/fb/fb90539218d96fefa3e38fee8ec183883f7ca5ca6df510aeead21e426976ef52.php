@@ -212,6 +212,10 @@ class __TwigTemplate_8b144d8c6ca7ce167c59186868b5228ad8b193bff9bb99cd55666c4ceae
 
     <a href=\"{{ path('group_new') }}\">Create new</a>
 {% endblock %}
+<<<<<<< HEAD
 ", "group/index.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\group\\index.html.twig");
+=======
+", "group/index.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\group\\index.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

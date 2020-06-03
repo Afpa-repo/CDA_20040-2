@@ -275,6 +275,10 @@ class __TwigTemplate_9028d1c903c11d3a413567071ee0d6867d9188f909f2729a828dd228257
     </body>
 </html>
 {% block after_html %}{% endblock %}
+<<<<<<< HEAD
 ", "@Twig/layout.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\layout.html.twig");
+=======
+", "@Twig/layout.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\layout.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

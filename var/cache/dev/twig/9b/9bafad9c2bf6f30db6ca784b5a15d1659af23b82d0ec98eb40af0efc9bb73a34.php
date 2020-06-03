@@ -199,6 +199,10 @@ Exception stack trace attached.
 {{ exception }}
 {% endif %}
 {% endblock %}
+<<<<<<< HEAD
 ", "@email/zurb_2/notification/body.txt.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\notification\\body.txt.twig");
+=======
+", "@email/zurb_2/notification/body.txt.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\notification\\body.txt.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

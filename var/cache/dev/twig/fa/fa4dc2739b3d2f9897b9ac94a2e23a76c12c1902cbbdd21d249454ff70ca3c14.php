@@ -73,6 +73,10 @@ class __TwigTemplate_22a95154fd27636968406d5b354780b85e481578713642ba0fb5178e93e
         <?php echo \$view['form']->widget(\$form); ?>
     </td>
 </tr>
+<<<<<<< HEAD
 ", "@Framework/FormTable/button_row.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\FormTable\\button_row.html.php");
+=======
+", "@Framework/FormTable/button_row.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\FormTable\\button_row.html.php");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

@@ -69,6 +69,10 @@ class __TwigTemplate_61a32eead2bfd7c0ee1ff375ce090d4617e4dbe77c5f9ae1077c9b96d16
 <?php echo \$view['form']->rest(\$form) ?>
 <?php endif ?>
 </form>
+<<<<<<< HEAD
 ", "@Framework/Form/form_end.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_end.html.php");
+=======
+", "@Framework/Form/form_end.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_end.html.php");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

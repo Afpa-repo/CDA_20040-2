@@ -83,6 +83,10 @@ class __TwigTemplate_ddebe4840b6db229193da0605154d075dcb8da0143f6df269bcbbd9f9a0
     <?php echo \$view['form']->block(\$form, 'form_rows'); ?>
     <?php echo \$view['form']->rest(\$form); ?>
 </table>
+<<<<<<< HEAD
 ", "@Framework/FormTable/form_widget_compound.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\FormTable\\form_widget_compound.html.php");
+=======
+", "@Framework/FormTable/form_widget_compound.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\FormTable\\form_widget_compound.html.php");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

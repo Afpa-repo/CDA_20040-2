@@ -161,6 +161,10 @@ class __TwigTemplate_d54e2e06f5fc9b725a7a107b771f09d6449edf18b997fef9de30e38116f
         </tr>
     </tbody>
 </table>
+<<<<<<< HEAD
 ", "@Twig/Exception/traces_text.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces_text.html.twig");
+=======
+", "@Twig/Exception/traces_text.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces_text.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

@@ -183,6 +183,10 @@ class __TwigTemplate_1ca6dacb977fd2c37cfd02e9a5590a15a94030ad147512d446b1eec9660
 
     {{ include('group/_delete_form.html.twig') }}
 {% endblock %}
+<<<<<<< HEAD
 ", "group/show.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\group\\show.html.twig");
+=======
+", "group/show.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\group\\show.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

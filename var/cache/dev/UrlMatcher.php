@@ -85,8 +85,14 @@ return [
                     .'|in(*:505)'
                     .'|out(*:516)'
                 .')'
+<<<<<<< HEAD
                 .'|/register(*:534)'
                 .'|/confirm/([^/]++)(*:559)'
+=======
+                .'|/register(*:538)'
+                .'|/confirm/([^/]++)(*:563)'
+                .'|/user(*:576)'
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
             .')/?$}sD',
     ],
     [ // $dynamicRoutes
@@ -117,10 +123,21 @@ return [
         477 => [[['_route' => 'provider_edit', '_controller' => 'App\\Controller\\ProviderController::edit'], ['prov_siren'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         485 => [[['_route' => 'provider_delete', '_controller' => 'App\\Controller\\ProviderController::delete'], ['prov_siren'], ['DELETE' => 0], null, false, true, null]],
         505 => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], [], null, null, false, false, null]],
+<<<<<<< HEAD
         516 => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], [], null, null, false, false, null]],
         534 => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::register'], [], null, null, false, false, null]],
         559 => [
             [['_route' => 'token_validate', '_controller' => 'App\\Controller\\SecurityController::validateToken'], ['token'], null, null, false, true, null],
+=======
+        519 => [
+            [['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], [], null, null, false, false, null],
+            [['_route' => 'logout'], [], null, null, false, false, null],
+        ],
+        538 => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::register'], [], null, null, false, false, null]],
+        563 => [[['_route' => 'token_validate', '_controller' => 'App\\Controller\\SecurityController::validateToken'], ['token'], null, null, false, true, null]],
+        576 => [
+            [['_route' => 'user', '_controller' => 'App\\Controller\\UserController::index'], [], null, null, false, false, null],
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
             [null, null, null, null, false, false, 0],
         ],
     ],

@@ -205,6 +205,10 @@ class __TwigTemplate_f168fba6381fe1e6e2cf09a9c32d79f72426e801882dfe84c388bc0708c
 
     <a href=\"{{ path('categories_new') }}\">Create new</a>
 {% endblock %}
+<<<<<<< HEAD
 ", "categories/index.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\categories\\index.html.twig");
+=======
+", "categories/index.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\categories\\index.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

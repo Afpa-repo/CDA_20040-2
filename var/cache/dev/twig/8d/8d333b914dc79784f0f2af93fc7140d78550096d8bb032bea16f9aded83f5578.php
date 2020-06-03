@@ -171,6 +171,10 @@ class __TwigTemplate_a2f22c912d65aed6daec406d4cc7cae993acc7f458a5a7ba9702af374bb
         {%- endfor -%}
     </pre>
 {% endif %}
+<<<<<<< HEAD
 ", "@Doctrine/Collector/explain.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\explain.html.twig");
+=======
+", "@Doctrine/Collector/explain.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\explain.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

@@ -67,6 +67,10 @@ class __TwigTemplate_185d9b993de4fe6ca6a41a266e87c1c180564cc11d734d2fdc4b75766d1
         return new Source("<div>
     <?php echo \$view['form']->widget(\$form) ?>
 </div>
+<<<<<<< HEAD
 ", "@Framework/Form/button_row.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\button_row.html.php");
+=======
+", "@Framework/Form/button_row.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\button_row.html.php");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

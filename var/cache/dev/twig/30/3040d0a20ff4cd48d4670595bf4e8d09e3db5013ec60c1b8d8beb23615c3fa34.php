@@ -1289,6 +1289,10 @@ $context["voter_detail"], "vote", [], "array", false, false, false, 353), twig_c
         </table>
     {% endif %}
 {% endblock %}
+<<<<<<< HEAD
 ", "@Security/Collector/security.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\security-bundle\\Resources\\views\\Collector\\security.html.twig");
+=======
+", "@Security/Collector/security.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\security-bundle\\Resources\\views\\Collector\\security.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

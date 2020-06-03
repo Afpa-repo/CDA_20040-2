@@ -156,6 +156,10 @@ class __TwigTemplate_60a1689e112a94fe7c1a44bd6fb3f91811bd81da6def3e49429b0f43e77
     <h2>{{ messages[about].title }}</h2>
     <p>{{ messages[about].message }}</p>
 {% endblock %}
+<<<<<<< HEAD
 ", "@WebProfiler/Profiler/info.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\info.html.twig");
+=======
+", "@WebProfiler/Profiler/info.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\info.html.twig");
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

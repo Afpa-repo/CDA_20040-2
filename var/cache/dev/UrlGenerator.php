@@ -49,4 +49,10 @@ return [
     'register' => [[], ['_controller' => 'App\\Controller\\SecurityController::register'], [], [['text', '/register']], [], []],
     'token_validate' => [['token'], ['_controller' => 'App\\Controller\\SecurityController::validateToken'], [], [['variable', '/', '[^/]++', 'token'], ['text', '/confirm']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
+<<<<<<< HEAD
+=======
+    'user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], []],
+    'index' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/']], [], []],
+    'logout' => [[], [], [], [['text', '/logout']], [], []],
+>>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
 ];

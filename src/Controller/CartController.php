@@ -2,11 +2,9 @@
 
 namespace App\Controller;
 
-use App\Entity\Products;
-use App\Repository\ProductsRepository;
-use Symfony\Component\HttpFoundation\Request;
+
+use App\Services\Cart\CartService;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class CartController extends AbstractController
@@ -14,23 +12,11 @@ class CartController extends AbstractController
     /**
      * @Route("/cart", name="cart_index")
      */
-    public function index(SessionInterface $session, ProductsRepository $productsRepository)
+    public function index(CartService $cartService)
     {
-        $cart = $session->get('panier', []);
-        $cartWithData = [];
-        foreach($cart as $id => $quantity){
-            $cartWithData[] = [
-                'product' => $productsRepository->find($id),
-                'quantity' => $quantity
-            ];
-        }
+        $cartWithData = $cartService->getFullCart();
 
-        $total = 0;
-
-        foreach($cartWithData as $item){
-            $totalItem = $item['product']->getProdPrice() * $item['quantity'];
-            $total += $totalItem;
-        }
+        $total = $cartService->getTotal();
         
         return $this->render('cart/index.html.twig', [
            'items' => $cartWithData,
@@ -42,18 +28,9 @@ class CartController extends AbstractController
     /**
      * @Route("/cart/add/{id}", name="cart_add")
      */
-    public function add($id, SessionInterface $session){
+    public function add($id, CartService $cartService){
         
-        $cart = $session->get('panier', []);
-        if (!empty($cart[$id])){
-
-            $cart[$id]++;
-
-        }else{
-
-        $cart[$id] = 1;
-        }
-        $session->set('panier', $cart);
+        $cartService->add($id);
 
         return $this->redirectToRoute("index");
         
@@ -64,13 +41,10 @@ class CartController extends AbstractController
     /**
      * @Route("/cart/remove/{id}", name="cart_remove")
      */
-    public function remove($id, SessionInterface $session){
-        $cart = $session->get('panier', []);
+    public function remove($id, CartService $cartService){
+        
+$cartService->remove($id);
 
-        if(!empty($cart[$id])){
-            unset($cart[$id]);
-        }
-        $session->set('panier', $cart);
         return $this->redirectToRoute("cart_index");
     }
 }

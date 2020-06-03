@@ -10,7 +10,7 @@ class UserController extends AbstractController
     /**
      * @Route("/user", name="user")
      */
-    public function index(SessionInterface $session)
+    public function index()
     {
         return $this->render('user/index.html.twig', [
             'controller_name' => 'UserController',

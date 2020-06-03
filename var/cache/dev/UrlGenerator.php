@@ -16,7 +16,6 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token'], ['text', '/_profiler']], [], []],
     'admin' => [[], ['_controller' => 'App\\Controller\\AdminController::admin'], [], [['text', '/admin']], [], []],
-    'index' => [[], ['_controller' => 'App\\Controller\\AppController::index'], [], [['text', '/']], [], []],
     'cart_index' => [[], ['_controller' => 'App\\Controller\\CartController::index'], [], [['text', '/cart']], [], []],
     'cart_add' => [['id'], ['_controller' => 'App\\Controller\\CartController::add'], [], [['variable', '/', '[^/]++', 'id'], ['text', '/cart/add']], [], []],
     'cart_remove' => [['id'], ['_controller' => 'App\\Controller\\CartController::remove'], [], [['variable', '/', '[^/]++', 'id'], ['text', '/cart/remove']], [], []],
@@ -30,7 +29,7 @@ return [
     'group_show' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::show'], [], [['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
     'group_edit' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
     'group_delete' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::delete'], [], [['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
-    'home' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/home']], [], []],
+    'index' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/']], [], []],
     'products_new' => [[], ['_controller' => 'App\\Controller\\ProductsController::new'], [], [['text', '/new']], [], []],
     'products_show' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::show'], [], [['variable', '/', '[^/]++', 'prod_id']], [], []],
     'products_edit' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'prod_id']], [], []],
@@ -49,10 +48,5 @@ return [
     'register' => [[], ['_controller' => 'App\\Controller\\SecurityController::register'], [], [['text', '/register']], [], []],
     'token_validate' => [['token'], ['_controller' => 'App\\Controller\\SecurityController::validateToken'], [], [['variable', '/', '[^/]++', 'token'], ['text', '/confirm']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
-<<<<<<< HEAD
-=======
     'user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], []],
-    'index' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/']], [], []],
-    'logout' => [[], [], [], [['text', '/logout']], [], []],
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
 ];

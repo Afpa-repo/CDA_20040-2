@@ -212,6 +212,6 @@ class __TwigTemplate_8b144d8c6ca7ce167c59186868b5228ad8b193bff9bb99cd55666c4ceae
 
     <a href=\"{{ path('group_new') }}\">Create new</a>
 {% endblock %}
-", "group/index.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\group\\index.html.twig");
+", "group/index.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\group\\index.html.twig");
     }
 }

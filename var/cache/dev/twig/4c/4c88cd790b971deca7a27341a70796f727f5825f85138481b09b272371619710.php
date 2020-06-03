@@ -81,6 +81,6 @@ class __TwigTemplate_699f741bc89fa5982cc8df658bd8aec31e13fa2fad8a6c1d42cdcf649a0
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ product.getId()) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "products/_delete_form.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\products\\_delete_form.html.twig");
+", "products/_delete_form.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\products\\_delete_form.html.twig");
     }
 }

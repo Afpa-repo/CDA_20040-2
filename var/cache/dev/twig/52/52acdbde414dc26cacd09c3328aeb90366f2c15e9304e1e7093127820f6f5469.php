@@ -71,6 +71,6 @@ class __TwigTemplate_f38daed2030d5fe0d5e577324e069c79e3d50b2ffcca4be9ddd57090a8b
     public function getSourceContext()
     {
         return new Source("<h1>Bonjour</h1>
-<p>Veuillez confirmez votre inscription en cliquant sur ce lien <a href=\"{{url('token_validate', {token:token})}}\">Ici</a></p>", "emails/register.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\emails\\register.html.twig");
+<p>Veuillez confirmez votre inscription en cliquant sur ce lien <a href=\"{{url('token_validate', {token:token})}}\">Ici</a></p>", "emails/register.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\emails\\register.html.twig");
     }
 }

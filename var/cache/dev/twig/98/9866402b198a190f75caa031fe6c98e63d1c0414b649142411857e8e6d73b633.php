@@ -226,6 +226,6 @@ class __TwigTemplate_c0e6685bbc2dcb96fb3429e12dcc78242a5b77b7a39ab8a9aa32db7eb29
 
     <a href=\"{{ path('promotions_new') }}\">Create new</a>
 {% endblock %}
-", "promotions/index.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\promotions\\index.html.twig");
+", "promotions/index.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\promotions\\index.html.twig");
     }
 }

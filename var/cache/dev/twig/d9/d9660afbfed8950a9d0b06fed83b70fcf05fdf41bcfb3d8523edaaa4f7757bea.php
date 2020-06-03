@@ -140,6 +140,6 @@ class __TwigTemplate_e660f9e46a68fe57eac83f9c4161f7c334851f9bbc456d1c186108fe90b
 
     {{ include('promotions/_delete_form.html.twig') }}
 {% endblock %}
-", "promotions/edit.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\promotions\\edit.html.twig");
+", "promotions/edit.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\promotions\\edit.html.twig");
     }
 }

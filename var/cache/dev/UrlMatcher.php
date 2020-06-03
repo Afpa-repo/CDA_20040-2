@@ -88,6 +88,7 @@ return [
                 .')'
                 .'|/register(*:538)'
                 .'|/confirm/([^/]++)(*:563)'
+                .'|/user(*:576)'
             .')/?$}sD',
     ],
     [ // $dynamicRoutes
@@ -123,8 +124,9 @@ return [
             [['_route' => 'logout'], [], null, null, false, false, null],
         ],
         538 => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::register'], [], null, null, false, false, null]],
-        563 => [
-            [['_route' => 'token_validate', '_controller' => 'App\\Controller\\SecurityController::validateToken'], ['token'], null, null, false, true, null],
+        563 => [[['_route' => 'token_validate', '_controller' => 'App\\Controller\\SecurityController::validateToken'], ['token'], null, null, false, true, null]],
+        576 => [
+            [['_route' => 'user', '_controller' => 'App\\Controller\\UserController::index'], [], null, null, false, false, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

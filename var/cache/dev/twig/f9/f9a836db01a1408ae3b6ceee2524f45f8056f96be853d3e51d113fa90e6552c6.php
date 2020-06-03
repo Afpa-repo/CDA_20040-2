@@ -113,6 +113,6 @@ class __TwigTemplate_f4b69f02fa575737c5d81e54ab12237ff002fc08f24adb7213e24d6a4e2
 
 {% block title %}Accueil{% endblock %}
 
-{% block body %}{% endblock %}", "index.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\index.html.twig");
+{% block body %}{% endblock %}", "index.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\index.html.twig");
     }
 }

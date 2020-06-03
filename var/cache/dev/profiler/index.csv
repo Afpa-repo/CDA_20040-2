@@ -153,3 +153,5 @@ bddd54,::1,GET,http://localhost/CDA_20040-2/public/cart,1591181409,,200
 638d68,::1,GET,http://localhost/CDA_20040-2/public/cart/remove/2,1591181419,,302
 01f9ff,::1,GET,http://localhost/CDA_20040-2/public/cart,1591181419,,200
 65b098,::1,GET,http://localhost/CDA_20040-2/public/,1591181497,,200
+82d417,::1,GET,http://localhost/fil%20rouge/filrougeAFPA/public/user,1591187515,3d12d0,404
+3d12d0,::1,GET,http://localhost/fil%20rouge/filrougeAFPA/public/user,1591187515,,404

@@ -67,9 +67,15 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
         // line 11
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/bad.png"), "html", null, true);
         echo "\" alt=\"logo\"></div>
+        <div><a href=\"";
+        // line 12
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cart_index");
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/cart.svg"), "html", null, true);
+        echo "\" alt=\"logo\" class=\"cover\"></a></div>
         <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
             <a class=\"navbar-brand\" href=\"";
-        // line 13
+        // line 14
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
         echo "\">B.A.D</a>
             <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor01\"
@@ -80,49 +86,49 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
             <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
                 <ul class=\"navbar-nav mr-auto\">
                     ";
-        // line 21
+        // line 22
         if ( !$this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("IS_AUTHENTICATED_FULLY")) {
-            // line 22
+            // line 23
             echo "                        
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-            // line 24
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_index");
+            // line 25
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\">Vinyles</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-            // line 27
+            // line 28
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("register");
             echo "\">Inscription</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-            // line 30
+            // line 31
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">Se connecter</a>
                         </li>
                     ";
         } else {
-            // line 33
+            // line 34
             echo "                        ";
             if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-                // line 34
+                // line 35
                 echo "                            <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"";
-                // line 35
+                // line 36
                 echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin");
                 echo "\">Administration</a>
                             </li>
                         ";
             }
-            // line 38
+            // line 39
             echo "                        <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\">Se déconnecter</a>
                         </li>
                     ";
         }
-        // line 42
+        // line 43
         echo "                </ul>
                 <form class=\"form-inline my-2 my-lg-0\">
                     <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">
@@ -131,12 +137,12 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
             </div>
         </nav>
         ";
-        // line 49
-        $this->displayBlock('body', $context, $blocks);
         // line 50
+        $this->displayBlock('body', $context, $blocks);
+        // line 51
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 51
+        // line 52
         echo "        <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"
             integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\"
             crossorigin=\"anonymous\"></script>
@@ -199,7 +205,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 
     }
 
-    // line 49
+    // line 50
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -217,7 +223,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 
     }
 
-    // line 50
+    // line 51
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -247,7 +253,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 
     public function getDebugInfo()
     {
-        return array (  221 => 50,  203 => 49,  185 => 8,  167 => 5,  140 => 51,  137 => 50,  135 => 49,  126 => 42,  120 => 38,  114 => 35,  111 => 34,  108 => 33,  102 => 30,  96 => 27,  90 => 24,  86 => 22,  84 => 21,  73 => 13,  68 => 11,  64 => 9,  62 => 8,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  227 => 51,  209 => 50,  191 => 8,  173 => 5,  146 => 52,  143 => 51,  141 => 50,  132 => 43,  126 => 39,  120 => 36,  117 => 35,  114 => 34,  108 => 31,  102 => 28,  96 => 25,  92 => 23,  90 => 22,  79 => 14,  72 => 12,  68 => 11,  64 => 9,  62 => 8,  58 => 7,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -263,6 +269,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
     </head>
     <body>
         <div><img src=\"{{asset('images/bad.png')}}\" alt=\"logo\"></div>
+        <div><a href=\"{{path(\"cart_index\")}}\"><img src=\"{{asset('images/cart.svg')}}\" alt=\"logo\" class=\"cover\"></a></div>
         <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
             <a class=\"navbar-brand\" href=\"{{path(\"index\")}}\">B.A.D</a>
             <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor01\"
@@ -275,7 +282,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
                     {% if not is_granted('IS_AUTHENTICATED_FULLY') %}
                         
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"{{path(\"products_index\")}}\">Vinyles</a>
+                            <a class=\"nav-link\" href=\"{{path(\"index\")}}\">Vinyles</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"{{path(\"register\")}}\">Inscription</a>
@@ -319,6 +326,6 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
         </script>
     </body>
 </html>
-", "base.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\base.html.twig");
+", "base.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\base.html.twig");
     }
 }

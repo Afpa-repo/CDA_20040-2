@@ -133,6 +133,6 @@ class __TwigTemplate_89359e4bbcfc345d07f6ebedb30fc2d812a4e79e4ab5932da522e31f92a
 
     <a href=\"{{ path('promotions_index') }}\">back to list</a>
 {% endblock %}
-", "promotions/new.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\promotions\\new.html.twig");
+", "promotions/new.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\promotions\\new.html.twig");
     }
 }

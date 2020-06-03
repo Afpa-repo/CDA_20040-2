@@ -205,6 +205,6 @@ class __TwigTemplate_def726e367fbe33e98a10542784eb5fa3aee68f0234499350a977985583
 
     {{ include('promotions/_delete_form.html.twig') }}
 {% endblock %}
-", "promotions/show.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\promotions\\show.html.twig");
+", "promotions/show.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\promotions\\show.html.twig");
     }
 }

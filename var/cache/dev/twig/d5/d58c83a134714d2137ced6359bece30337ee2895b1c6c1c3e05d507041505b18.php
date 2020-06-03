@@ -172,6 +172,6 @@ class __TwigTemplate_ffe17cd783948e80fe195e09ff7d16d60576bcd1235bcd67af5a2905694
 
     {{ include('categories/_delete_form.html.twig') }}
 {% endblock %}
-", "categories/show.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\categories\\show.html.twig");
+", "categories/show.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\categories\\show.html.twig");
     }
 }

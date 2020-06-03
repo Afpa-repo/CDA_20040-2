@@ -1,5 +1,5 @@
-index:
-    controller: App\Controller\ProductsController::index
-    path: /
-logout:
-  path: /logout
+# index:
+#     controller: App\Controller\ProductsController::index
+#     path: /
+# logout:
+#   path: /logout

@@ -141,13 +141,17 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
             // line 31
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_edit", ["prod_id" => twig_get_attribute($this->env, $this->source, $context["product"], "getId", [], "method", false, false, false, 31)]), "html", null, true);
             echo "\"><i class=\"fas fa-edit\"></i></a>
+                    <a href=\"";
+            // line 32
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cart_add", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "getId", [], "method", false, false, false, 32)]), "html", null, true);
+            echo "\"><i class=\"fas fa-edit\"></i></a>
                 </td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 35
+            // line 36
             echo "            <tr>
                 <td colspan=\"7\">no records found</td>
             </tr>
@@ -156,12 +160,12 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 39
+        // line 40
         echo "        </tbody>
     </table>
 
     <a href=\"";
-        // line 42
+        // line 43
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_new");
         echo "\">Create new</a>
 ";
@@ -185,7 +189,7 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
 
     public function getDebugInfo()
     {
-        return array (  165 => 42,  160 => 39,  151 => 35,  142 => 31,  138 => 30,  133 => 28,  129 => 27,  125 => 26,  121 => 25,  117 => 24,  113 => 23,  110 => 22,  105 => 21,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  169 => 43,  164 => 40,  155 => 36,  146 => 32,  142 => 31,  138 => 30,  133 => 28,  129 => 27,  125 => 26,  121 => 25,  117 => 24,  113 => 23,  110 => 22,  105 => 21,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -221,6 +225,7 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
                 <td>
                     <a href=\"{{ path('products_show', {'prod_id': product.getId()}) }}\">view more<i class=\"fas fa-eye\"></i></a>&nbsp;&nbsp;
                     <a href=\"{{ path('products_edit', {'prod_id': product.getId()}) }}\"><i class=\"fas fa-edit\"></i></a>
+                    <a href=\"{{ path('cart_add', {'id' : product.getId()}) }}\"><i class=\"fas fa-edit\"></i></a>
                 </td>
             </tr>
         {% else %}
@@ -233,6 +238,6 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
 
     <a href=\"{{ path('products_new') }}\">Create new</a>
 {% endblock %}
-", "products/index.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\products\\index.html.twig");
+", "products/index.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\products\\index.html.twig");
     }
 }

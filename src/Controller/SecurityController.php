@@ -18,6 +18,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
+
 class SecurityController extends AbstractController
 {
     /**
@@ -66,7 +67,7 @@ class SecurityController extends AbstractController
                 "Un email de confirmation vous a été envoyé"
             );
 
-            return $this->redirectToRoute('index');
+            return $this->redirectToRoute('home');
 
         }
         return $this->render('security/register.html.twig', [

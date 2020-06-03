@@ -32,7 +32,7 @@ class CartController extends AbstractController
         
         $cartService->add($id);
 
-        return $this->redirectToRoute("index");
+        return $this->redirectToRoute("home");
         
 
     }

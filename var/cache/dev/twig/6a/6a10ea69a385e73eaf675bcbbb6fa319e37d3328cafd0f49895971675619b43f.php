@@ -133,6 +133,6 @@ class __TwigTemplate_be457c705e533c84ea3f1a5f8eb6e19bb7f050a94904815eb14f7228bb2
 
     <a href=\"{{ path('categories_index') }}\">back to list</a>
 {% endblock %}
-", "categories/new.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\categories\\new.html.twig");
+", "categories/new.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\categories\\new.html.twig");
     }
 }

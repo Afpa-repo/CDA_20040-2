@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerPsX2So3\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'PsX2So3',
-    'container.build_id' => '9097bafa',
-    'container.build_time' => 1591186322,
+    'container.build_id' => '29d8f3ba',
+    'container.build_time' => 1591194007,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerPsX2So3');

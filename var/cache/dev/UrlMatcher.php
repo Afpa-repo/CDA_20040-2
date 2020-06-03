@@ -14,15 +14,16 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/admin' => [[['_route' => 'admin', '_controller' => 'App\\Controller\\AdminController::admin'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\AppController::index'], null, null, null, false, false, null]],
         '/cart' => [[['_route' => 'cart_index', '_controller' => 'App\\Controller\\CartController::index'], null, null, null, false, false, null]],
         '/categories' => [[['_route' => 'categories_index', '_controller' => 'App\\Controller\\CategoriesController::index'], null, ['GET' => 0], null, true, false, null]],
         '/categories/new' => [[['_route' => 'categories_new', '_controller' => 'App\\Controller\\CategoriesController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/groups' => [[['_route' => 'group_index', '_controller' => 'App\\Controller\\GroupController::index'], null, ['GET' => 0], null, true, false, null]],
         '/groups/new' => [[['_route' => 'group_new', '_controller' => 'App\\Controller\\GroupController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        '/home' => [[['_route' => 'home', '_controller' => 'App\\Controller\\ProductsController::index'], null, ['GET' => 0], null, false, false, null]],
         '/new' => [[['_route' => 'products_new', '_controller' => 'App\\Controller\\ProductsController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/promotions/new' => [[['_route' => 'promotions_new', '_controller' => 'App\\Controller\\PromotionsController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/providers/new' => [[['_route' => 'provider_new', '_controller' => 'App\\Controller\\ProviderController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\ProductsController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
@@ -82,12 +83,10 @@ return [
                 .')'
                 .'|/log(?'
                     .'|in(*:505)'
-                    .'|out(?'
-                        .'|(*:519)'
-                    .')'
+                    .'|out(*:516)'
                 .')'
-                .'|/register(*:538)'
-                .'|/confirm/([^/]++)(*:563)'
+                .'|/register(*:534)'
+                .'|/confirm/([^/]++)(*:559)'
             .')/?$}sD',
     ],
     [ // $dynamicRoutes
@@ -118,12 +117,9 @@ return [
         477 => [[['_route' => 'provider_edit', '_controller' => 'App\\Controller\\ProviderController::edit'], ['prov_siren'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         485 => [[['_route' => 'provider_delete', '_controller' => 'App\\Controller\\ProviderController::delete'], ['prov_siren'], ['DELETE' => 0], null, false, true, null]],
         505 => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], [], null, null, false, false, null]],
-        519 => [
-            [['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], [], null, null, false, false, null],
-            [['_route' => 'logout'], [], null, null, false, false, null],
-        ],
-        538 => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::register'], [], null, null, false, false, null]],
-        563 => [
+        516 => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], [], null, null, false, false, null]],
+        534 => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::register'], [], null, null, false, false, null]],
+        559 => [
             [['_route' => 'token_validate', '_controller' => 'App\\Controller\\SecurityController::validateToken'], ['token'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

@@ -1,0 +1,3 @@
+26566b,::1,GET,http://localhost/CDA_20040-2/public/,1591197607,,200
+19e54b,::1,GET,http://localhost/CDA_20040-2/public/login,1591197612,a3f912,404
+a3f912,::1,GET,http://localhost/CDA_20040-2/public/login,1591197612,,404

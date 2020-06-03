@@ -10,14 +10,13 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("/home")
- */
+
+
 
 class ProductsController extends AbstractController
 {
     /**
-     * @Route("/home", name="home", methods={"GET"})
+     * @Route("/", name="index", methods={"GET"})
      */
 
     public function index(ProductsRepository $productsRepository): Response
@@ -42,7 +41,7 @@ class ProductsController extends AbstractController
             $entityManager->persist($product);
             $entityManager->flush();
 
-            return $this->redirectToRoute('home');
+            return $this->redirectToRoute('index');
         }
 
         return $this->render('products/new.html.twig', [
@@ -72,7 +71,7 @@ class ProductsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('home');
+            return $this->redirectToRoute('index');
         }
 
         return $this->render('products/edit.html.twig', [
@@ -86,12 +85,26 @@ class ProductsController extends AbstractController
      */
     public function delete(Request $request, Products $product): Response
     {
+
+
+        if ($this->isCsrfTokenValid('delete' . $product->getId(), $request->request->get('_token'))) {
+
         if ($this->isCsrfTokenValid('delete' . $product->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($product);
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('home');
+
+            if ($this->isCsrfTokenValid('delete' . $product->getProd_id(), $request->request->get('_token'))) {
+
+                $entityManager = $this->getDoctrine()->getManager();
+                $entityManager->remove($product);
+                $entityManager->flush();
+            }
+
+            return $this->redirectToRoute('index');
+        }
     }
 }
+

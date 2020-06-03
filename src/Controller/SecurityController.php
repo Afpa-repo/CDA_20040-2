@@ -67,7 +67,7 @@ class SecurityController extends AbstractController
                 "Un email de confirmation vous a été envoyé"
             );
 
-            return $this->redirectToRoute('home');
+            return $this->redirectToRoute('index');
 
         }
         return $this->render('security/register.html.twig', [

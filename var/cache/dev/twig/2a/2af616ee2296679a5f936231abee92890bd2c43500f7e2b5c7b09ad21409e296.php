@@ -81,6 +81,6 @@ class __TwigTemplate_ef50ab16e31d3c5c031c9589fb9b2c3cc7ff4576dbaa3799fd0c7c414f0
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ provider.prov_siren) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "provider/_delete_form.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\provider\\_delete_form.html.twig");
+", "provider/_delete_form.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\provider\\_delete_form.html.twig");
     }
 }

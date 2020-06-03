@@ -19,7 +19,7 @@ return [
         '/categories/new' => [[['_route' => 'categories_new', '_controller' => 'App\\Controller\\CategoriesController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/groups' => [[['_route' => 'group_index', '_controller' => 'App\\Controller\\GroupController::index'], null, ['GET' => 0], null, true, false, null]],
         '/groups/new' => [[['_route' => 'group_new', '_controller' => 'App\\Controller\\GroupController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        '/products' => [[['_route' => 'products_index', '_controller' => 'App\\Controller\\ProductsController::index'], null, ['GET' => 0], null, true, false, null]],
+        '/products/products' => [[['_route' => 'products_index', '_controller' => 'App\\Controller\\ProductsController::index'], null, ['GET' => 0], null, false, false, null]],
         '/products/new' => [[['_route' => 'products_new', '_controller' => 'App\\Controller\\ProductsController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/promotions' => [[['_route' => 'promotions_index', '_controller' => 'App\\Controller\\PromotionsController::index'], null, ['GET' => 0], null, true, false, null]],
         '/promotions/new' => [[['_route' => 'promotions_new', '_controller' => 'App\\Controller\\PromotionsController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],

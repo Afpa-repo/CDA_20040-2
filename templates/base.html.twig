@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/spacelab/bootstrap.min.css">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
@@ -18,6 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                     {% if not is_granted('IS_AUTHENTICATED_FULLY') %}
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{path("products_index")}}">Vinyles</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{path("register")}}">Inscription</a>
                         </li>

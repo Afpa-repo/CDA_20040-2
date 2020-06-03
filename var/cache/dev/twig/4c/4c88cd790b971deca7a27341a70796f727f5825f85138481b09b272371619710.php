@@ -41,12 +41,12 @@ class __TwigTemplate_699f741bc89fa5982cc8df658bd8aec31e13fa2fad8a6c1d42cdcf649a0
 
         // line 1
         echo "<form method=\"post\" action=\"";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_delete", ["prod_id" => twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 1, $this->source); })()), "prod_id", [], "any", false, false, false, 1)]), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_delete", ["prod_id" => twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 1, $this->source); })()), "getId", [], "method", false, false, false, 1)]), "html", null, true);
         echo "\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
     <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
     <input type=\"hidden\" name=\"_token\" value=\"";
         // line 3
-        echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 3, $this->source); })()), "prod_id", [], "any", false, false, false, 3))), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 3, $this->source); })()), "getId", [], "method", false, false, false, 3))), "html", null, true);
         echo "\">
     <button class=\"btn\">Delete</button>
 </form>
@@ -76,11 +76,11 @@ class __TwigTemplate_699f741bc89fa5982cc8df658bd8aec31e13fa2fad8a6c1d42cdcf649a0
 
     public function getSourceContext()
     {
-        return new Source("<form method=\"post\" action=\"{{ path('products_delete', {'prod_id': product.prod_id}) }}\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
+        return new Source("<form method=\"post\" action=\"{{ path('products_delete', {'prod_id': product.getId()}) }}\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
     <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
-    <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ product.prod_id) }}\">
+    <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ product.getId()) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "products/_delete_form.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\products\\_delete_form.html.twig");
+", "products/_delete_form.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\products\\_delete_form.html.twig");
     }
 }

@@ -12,7 +12,7 @@
                 <th>Nom</th>
                 <th>Description</th>
                 <th>Prix HT</th>
-                <th>Affiché ?</th>
+                <th>Affiché </th>
                 <th>Stock</th>
                 <th>Actions</th>
             </tr>
@@ -20,15 +20,15 @@
         <tbody>
         {% for product in products %}
             <tr>
-                <td>{{ product.prodId }}</td>
-                <td>{{ product.prodName }}</td>
-                <td>{{ product.prodDescr }}</td>
-                <td>{{ product.prodPrice }}</td>€
-                <td>{{ product.prodDisplay ? 'Oui' : 'Non' }}</td>
-                <td>{{ product.prodStock }}</td>
+                <td><img src="{{ asset('images/vinylfilrouge/' ~ product.Photo.getPhotoId() ~ '.' ~ product.Photo.getPhotoFormat())}}" class="cover"></td>
+                <td>{{ product.getProdName() }}</td>
+                <td>{{ product.getProdDescr() }}</td>
+                <td>{{ product.getProdPrice() }}€</td>
+                <td>{{ product.getProdDisplay() ? 'Oui' : 'Non' }}</td>
+                <td>{{ product.getProdStock() }}</td>
                 <td>
-                    <a href="{{ path('products_show', {'prod_id': product.prod_id}) }}"><i class="fas fa-eye"></i></a>&nbsp;&nbsp;
-                    <a href="{{ path('products_edit', {'prod_id': product.prod_id}) }}"><i class="fas fa-edit"></i></a>
+                    <a href="{{ path('products_show', {'prod_id': product.getId()}) }}">view more<i class="fas fa-eye"></i></a>&nbsp;&nbsp;
+                    <a href="{{ path('products_edit', {'prod_id': product.getId()}) }}"><i class="fas fa-edit"></i></a>
                 </td>
             </tr>
         {% else %}

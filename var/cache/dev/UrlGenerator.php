@@ -27,7 +27,7 @@ return [
     'group_show' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::show'], [], [['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
     'group_edit' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
     'group_delete' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::delete'], [], [['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
-    'products_index' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/products/']], [], []],
+    'products_index' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/products/products']], [], []],
     'products_new' => [[], ['_controller' => 'App\\Controller\\ProductsController::new'], [], [['text', '/products/new']], [], []],
     'products_show' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::show'], [], [['variable', '/', '[^/]++', 'prod_id'], ['text', '/products']], [], []],
     'products_edit' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'prod_id'], ['text', '/products']], [], []],

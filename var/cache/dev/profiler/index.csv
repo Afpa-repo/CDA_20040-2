@@ -4,3 +4,8 @@ d7b811,::1,GET,http://localhost/CDA_20040-2/public/,1591091767,,200
 9ae216,::1,GET,http://localhost/CDA_20040-2/public/register,1591091769,,500
 c03ebc,::1,GET,http://localhost/CDA_20040-2/public/register,1591096421,cab12d,500
 cab12d,::1,GET,http://localhost/CDA_20040-2/public/register,1591096421,,500
+37fa24,::1,GET,http://localhost/CDA_20040-2/public/,1591167484,e2cf89,500
+e2cf89,::1,GET,http://localhost/CDA_20040-2/public/,1591167484,,500
+7d3c7b,::1,GET,http://localhost/CDA_20040-2/public/,1591168095,,200
+df73a1,::1,GET,http://localhost/CDA_20040-2/public/register,1591168097,826f89,500
+826f89,::1,GET,http://localhost/CDA_20040-2/public/register,1591168097,,500

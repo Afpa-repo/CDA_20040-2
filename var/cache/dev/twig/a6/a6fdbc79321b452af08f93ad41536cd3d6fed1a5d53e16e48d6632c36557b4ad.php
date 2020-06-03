@@ -94,7 +94,7 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
                 <th>Nom</th>
                 <th>Description</th>
                 <th>Prix HT</th>
-                <th>Affiché ?</th>
+                <th>Affiché </th>
                 <th>Stock</th>
                 <th>Actions</th>
             </tr>
@@ -108,38 +108,38 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
             // line 22
             echo "            <tr>
-                <td>";
+                <td><img src=\"";
             // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "prodId", [], "any", false, false, false, 23), "html", null, true);
-            echo "</td>
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(((("images/vinylfilrouge/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["product"], "Photo", [], "any", false, false, false, 23), "getPhotoId", [], "method", false, false, false, 23)) . ".") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["product"], "Photo", [], "any", false, false, false, 23), "getPhotoFormat", [], "method", false, false, false, 23))), "html", null, true);
+            echo "\" class=\"cover\"></td>
                 <td>";
             // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "prodName", [], "any", false, false, false, 24), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getProdName", [], "method", false, false, false, 24), "html", null, true);
             echo "</td>
                 <td>";
             // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "prodDescr", [], "any", false, false, false, 25), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getProdDescr", [], "method", false, false, false, 25), "html", null, true);
             echo "</td>
                 <td>";
             // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "prodPrice", [], "any", false, false, false, 26), "html", null, true);
-            echo "</td>€
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getProdPrice", [], "method", false, false, false, 26), "html", null, true);
+            echo "€</td>
                 <td>";
             // line 27
-            echo ((twig_get_attribute($this->env, $this->source, $context["product"], "prodDisplay", [], "any", false, false, false, 27)) ? ("Oui") : ("Non"));
+            echo ((twig_get_attribute($this->env, $this->source, $context["product"], "getProdDisplay", [], "method", false, false, false, 27)) ? ("Oui") : ("Non"));
             echo "</td>
                 <td>";
             // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "prodStock", [], "any", false, false, false, 28), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "getProdStock", [], "method", false, false, false, 28), "html", null, true);
             echo "</td>
                 <td>
                     <a href=\"";
             // line 30
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_show", ["prod_id" => twig_get_attribute($this->env, $this->source, $context["product"], "prod_id", [], "any", false, false, false, 30)]), "html", null, true);
-            echo "\"><i class=\"fas fa-eye\"></i></a>&nbsp;&nbsp;
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_show", ["prod_id" => twig_get_attribute($this->env, $this->source, $context["product"], "getId", [], "method", false, false, false, 30)]), "html", null, true);
+            echo "\">view more<i class=\"fas fa-eye\"></i></a>&nbsp;&nbsp;
                     <a href=\"";
             // line 31
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_edit", ["prod_id" => twig_get_attribute($this->env, $this->source, $context["product"], "prod_id", [], "any", false, false, false, 31)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_edit", ["prod_id" => twig_get_attribute($this->env, $this->source, $context["product"], "getId", [], "method", false, false, false, 31)]), "html", null, true);
             echo "\"><i class=\"fas fa-edit\"></i></a>
                 </td>
             </tr>
@@ -204,7 +204,7 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
                 <th>Nom</th>
                 <th>Description</th>
                 <th>Prix HT</th>
-                <th>Affiché ?</th>
+                <th>Affiché </th>
                 <th>Stock</th>
                 <th>Actions</th>
             </tr>
@@ -212,15 +212,15 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
         <tbody>
         {% for product in products %}
             <tr>
-                <td>{{ product.prodId }}</td>
-                <td>{{ product.prodName }}</td>
-                <td>{{ product.prodDescr }}</td>
-                <td>{{ product.prodPrice }}</td>€
-                <td>{{ product.prodDisplay ? 'Oui' : 'Non' }}</td>
-                <td>{{ product.prodStock }}</td>
+                <td><img src=\"{{ asset('images/vinylfilrouge/' ~ product.Photo.getPhotoId() ~ '.' ~ product.Photo.getPhotoFormat())}}\" class=\"cover\"></td>
+                <td>{{ product.getProdName() }}</td>
+                <td>{{ product.getProdDescr() }}</td>
+                <td>{{ product.getProdPrice() }}€</td>
+                <td>{{ product.getProdDisplay() ? 'Oui' : 'Non' }}</td>
+                <td>{{ product.getProdStock() }}</td>
                 <td>
-                    <a href=\"{{ path('products_show', {'prod_id': product.prod_id}) }}\"><i class=\"fas fa-eye\"></i></a>&nbsp;&nbsp;
-                    <a href=\"{{ path('products_edit', {'prod_id': product.prod_id}) }}\"><i class=\"fas fa-edit\"></i></a>
+                    <a href=\"{{ path('products_show', {'prod_id': product.getId()}) }}\">view more<i class=\"fas fa-eye\"></i></a>&nbsp;&nbsp;
+                    <a href=\"{{ path('products_edit', {'prod_id': product.getId()}) }}\"><i class=\"fas fa-edit\"></i></a>
                 </td>
             </tr>
         {% else %}
@@ -233,6 +233,6 @@ class __TwigTemplate_226775f77460375160db6a2b16f5e1881bb1834ac2b48800a82da3c00e1
 
     <a href=\"{{ path('products_new') }}\">Create new</a>
 {% endblock %}
-", "products/index.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\products\\index.html.twig");
+", "products/index.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\products\\index.html.twig");
     }
 }

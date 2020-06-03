@@ -118,6 +118,6 @@ class __TwigTemplate_7ed1a5f3c48532e889827d212808a1b9888fa2fb778ac661e300eaab441
 
 {% block body %}
 
-{% endblock %}", "admin/admin.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\admin\\admin.html.twig");
+{% endblock %}", "admin/admin.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\admin\\admin.html.twig");
     }
 }

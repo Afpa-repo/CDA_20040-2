@@ -81,6 +81,6 @@ class __TwigTemplate_e19e5d4a1a0978c8bcd256c2d49d0a74bafd9abe41c8c96702d6c82166f
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ category.cat_id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "categories/_delete_form.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\categories\\_delete_form.html.twig");
+", "categories/_delete_form.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\categories\\_delete_form.html.twig");
     }
 }

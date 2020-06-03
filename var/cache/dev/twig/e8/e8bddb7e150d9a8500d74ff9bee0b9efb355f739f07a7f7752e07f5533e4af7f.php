@@ -93,42 +93,42 @@ class __TwigTemplate_4c3edf9b4cba8bf1e06cdc5388fd678cc334a58baf1328cfa617c696542
                 <th>Prod_id</th>
                 <td>";
         // line 12
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 12, $this->source); })()), "prodId", [], "any", false, false, false, 12), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 12, $this->source); })()), "getId", [], "method", false, false, false, 12), "html", null, true);
         echo "</td>
             </tr>
             <tr>
                 <th>Prod_name</th>
                 <td>";
         // line 16
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 16, $this->source); })()), "prodName", [], "any", false, false, false, 16), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 16, $this->source); })()), "getProdName", [], "method", false, false, false, 16), "html", null, true);
         echo "</td>
             </tr>
             <tr>
                 <th>Prod_descr</th>
                 <td>";
         // line 20
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 20, $this->source); })()), "prodDescr", [], "any", false, false, false, 20), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 20, $this->source); })()), "getProdDescr", [], "method", false, false, false, 20), "html", null, true);
         echo "</td>
             </tr>
             <tr>
                 <th>Prod_price</th>
                 <td>";
         // line 24
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 24, $this->source); })()), "prodPrice", [], "any", false, false, false, 24), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 24, $this->source); })()), "getProdPrice", [], "method", false, false, false, 24), "html", null, true);
         echo "</td>
             </tr>
             <tr>
                 <th>Prod_display</th>
                 <td>";
         // line 28
-        echo ((twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 28, $this->source); })()), "prodDisplay", [], "any", false, false, false, 28)) ? ("Yes") : ("No"));
+        echo ((twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 28, $this->source); })()), "getProdDisplay", [], "method", false, false, false, 28)) ? ("Yes") : ("No"));
         echo "</td>
             </tr>
             <tr>
                 <th>Prod_stock</th>
                 <td>";
         // line 32
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 32, $this->source); })()), "prodStock", [], "any", false, false, false, 32), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 32, $this->source); })()), "getProdStock", [], "method", false, false, false, 32), "html", null, true);
         echo "</td>
             </tr>
         </tbody>
@@ -141,7 +141,7 @@ class __TwigTemplate_4c3edf9b4cba8bf1e06cdc5388fd678cc334a58baf1328cfa617c696542
 
     <a href=\"";
         // line 39
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_edit", ["prod_id" => twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 39, $this->source); })()), "prod_id", [], "any", false, false, false, 39)]), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_edit", ["prod_id" => twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 39, $this->source); })()), "getId", [], "method", false, false, false, 39)]), "html", null, true);
         echo "\">edit</a>
 
     ";
@@ -185,37 +185,37 @@ class __TwigTemplate_4c3edf9b4cba8bf1e06cdc5388fd678cc334a58baf1328cfa617c696542
         <tbody>
             <tr>
                 <th>Prod_id</th>
-                <td>{{ product.prodId }}</td>
+                <td>{{ product.getId() }}</td>
             </tr>
             <tr>
                 <th>Prod_name</th>
-                <td>{{ product.prodName }}</td>
+                <td>{{ product.getProdName() }}</td>
             </tr>
             <tr>
                 <th>Prod_descr</th>
-                <td>{{ product.prodDescr }}</td>
+                <td>{{ product.getProdDescr() }}</td>
             </tr>
             <tr>
                 <th>Prod_price</th>
-                <td>{{ product.prodPrice }}</td>
+                <td>{{ product.getProdPrice() }}</td>
             </tr>
             <tr>
                 <th>Prod_display</th>
-                <td>{{ product.prodDisplay ? 'Yes' : 'No' }}</td>
+                <td>{{ product.getProdDisplay() ? 'Yes' : 'No' }}</td>
             </tr>
             <tr>
                 <th>Prod_stock</th>
-                <td>{{ product.prodStock }}</td>
+                <td>{{ product.getProdStock() }}</td>
             </tr>
         </tbody>
     </table>
 
     <a href=\"{{ path('products_index') }}\">back to list</a>
 
-    <a href=\"{{ path('products_edit', {'prod_id': product.prod_id}) }}\">edit</a>
+    <a href=\"{{ path('products_edit', {'prod_id': product.getId()}) }}\">edit</a>
 
     {{ include('products/_delete_form.html.twig') }}
 {% endblock %}
-", "products/show.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\products\\show.html.twig");
+", "products/show.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\products\\show.html.twig");
     }
 }

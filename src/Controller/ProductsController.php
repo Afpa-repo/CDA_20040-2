@@ -16,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProductsController extends AbstractController
 {
     /**
-     * @Route("/", name="products_index", methods={"GET"})
+     * @Route("/products", name="products_index", methods={"GET"})
      */
     public function index(ProductsRepository $productsRepository): Response
     {

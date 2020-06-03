@@ -84,6 +84,6 @@ class __TwigTemplate_2bee2acb352c5b9bcd787e1d4c687643a1c2d13abcb9f38aff465709c36
     {{ form_widget(form) }}
     <button class=\"btn\">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
-", "promotions/_form.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\promotions\\_form.html.twig");
+", "promotions/_form.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\promotions\\_form.html.twig");
     }
 }

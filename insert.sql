@@ -8,19 +8,19 @@
 
 /* Categories */
 INSERT INTO `categories` VALUES 
-(1, "Metal",NULL),
+(1, "Metal",0),
 (101, "Black Metal", 1),
 (102, "Power Metal", 1),
 (103, "Thrash Metal", 1),
-(2, "Musique Française", NULL),
+(2, "Musique Française", 0),
 (201, "Bal Musette", 2),
 (202, "Chanson Française", 2),
 (203, "Jazz Manouche", 2),
-(3, "Electro", NULL),
+(3, "Electro", 0),
 (301, "House", 3),
 (302, "Tribe", 3),
 (303, "Expérimentale", 3),
-(4, "Folk", NULL),
+(4, "Folk", 0),
 (401, "Musique Bretonne", 4),
 (402, "Musique Latine", 4 );
 
@@ -99,8 +99,8 @@ INSERT INTO `type_provider` VALUES
 
 /*fournisseur*/
 INSERT INTO `provider` VALUES
-("159785863", 1, "DétailVin", "detailtout@vinylism.com", "0322457896", "Détaillant De vinyl", 5),
-("321654987", 2, "MassVin", "massdetout@lapostiere.fr", "0155789631", "Grossite De vinyl", 6);
+("159785863", 1,  5, "DétailVin", "detailtout@vinylism.com", "0322457896", "Détaillant De vinyl"),
+("321654987", 2, 6,"MassVin", "massdetout@lapostiere.fr", "0155789631", "Grossite De vinyl");
 
 /*products*/
 INSERT INTO `products` VALUES

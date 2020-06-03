@@ -53,19 +53,23 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/spacelab/bootstrap.min.css\">
-        ";
+        <link rel=\"stylesheet\" href=\"";
         // line 7
-        $this->displayBlock('stylesheets', $context, $blocks);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/style.css"), "html", null, true);
+        echo "\">
+        ";
         // line 8
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 9
         echo "    </head>
     <body>
         <div><img src=\"";
-        // line 10
+        // line 11
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/bad.png"), "html", null, true);
         echo "\" alt=\"logo\"></div>
         <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
             <a class=\"navbar-brand\" href=\"";
-        // line 12
+        // line 13
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
         echo "\">B.A.D</a>
             <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor01\"
@@ -76,42 +80,49 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
             <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
                 <ul class=\"navbar-nav mr-auto\">
                     ";
-        // line 20
+        // line 21
         if ( !$this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("IS_AUTHENTICATED_FULLY")) {
-            // line 21
-            echo "                        <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"";
             // line 22
+            echo "                        
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"";
+            // line 24
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products_index");
+            echo "\">Vinyles</a>
+                        </li>
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"";
+            // line 27
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("register");
             echo "\">Inscription</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-            // line 25
+            // line 30
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">Se connecter</a>
                         </li>
                     ";
         } else {
-            // line 28
+            // line 33
             echo "                        ";
             if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-                // line 29
+                // line 34
                 echo "                            <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"";
-                // line 30
+                // line 35
                 echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin");
                 echo "\">Administration</a>
                             </li>
                         ";
             }
-            // line 33
+            // line 38
             echo "                        <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\">Se déconnecter</a>
                         </li>
                     ";
         }
-        // line 37
+        // line 42
         echo "                </ul>
                 <form class=\"form-inline my-2 my-lg-0\">
                     <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">
@@ -120,12 +131,12 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
             </div>
         </nav>
         ";
-        // line 44
+        // line 49
         $this->displayBlock('body', $context, $blocks);
-        // line 45
+        // line 50
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 46
+        // line 51
         echo "        <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"
             integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\"
             crossorigin=\"anonymous\"></script>
@@ -170,7 +181,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 
     }
 
-    // line 7
+    // line 8
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -188,7 +199,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 
     }
 
-    // line 44
+    // line 49
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -206,7 +217,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 
     }
 
-    // line 45
+    // line 50
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -236,7 +247,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
 
     public function getDebugInfo()
     {
-        return array (  210 => 45,  192 => 44,  174 => 7,  156 => 5,  129 => 46,  126 => 45,  124 => 44,  115 => 37,  109 => 33,  103 => 30,  100 => 29,  97 => 28,  91 => 25,  85 => 22,  82 => 21,  80 => 20,  69 => 12,  64 => 10,  60 => 8,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  221 => 50,  203 => 49,  185 => 8,  167 => 5,  140 => 51,  137 => 50,  135 => 49,  126 => 42,  120 => 38,  114 => 35,  111 => 34,  108 => 33,  102 => 30,  96 => 27,  90 => 24,  86 => 22,  84 => 21,  73 => 13,  68 => 11,  64 => 9,  62 => 8,  58 => 7,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -247,6 +258,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
         <meta charset=\"UTF-8\">
         <title>{% block title %}{% endblock %}</title>
         <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/spacelab/bootstrap.min.css\">
+        <link rel=\"stylesheet\" href=\"{{asset('css/style.css')}}\">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
@@ -261,6 +273,10 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
             <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
                 <ul class=\"navbar-nav mr-auto\">
                     {% if not is_granted('IS_AUTHENTICATED_FULLY') %}
+                        
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"{{path(\"products_index\")}}\">Vinyles</a>
+                        </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"{{path(\"register\")}}\">Inscription</a>
                         </li>
@@ -303,6 +319,6 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
         </script>
     </body>
 </html>
-", "base.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\base.html.twig");
+", "base.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\base.html.twig");
     }
 }

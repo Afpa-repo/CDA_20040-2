@@ -133,6 +133,6 @@ class __TwigTemplate_eb4f2e9063efc515fc94d7a6c1ae1464e42c73490f5ee7ae59c33d25bcb
 
     <a href=\"{{ path('group_index') }}\">back to list</a>
 {% endblock %}
-", "group/new.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\group\\new.html.twig");
+", "group/new.html.twig", "C:\\wamp64\\www\\filrougeAFPA\\templates\\group\\new.html.twig");
     }
 }

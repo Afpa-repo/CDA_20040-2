@@ -174,10 +174,6 @@ class __TwigTemplate_2acc336e2eea9c346cfebbb88ae07a89009e529e2acf634e95154542925
         {% endif %}
     </div>
 {% endblock %}
-<<<<<<< HEAD
 ", "@WebProfiler/Profiler/open.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\open.html.twig");
-=======
-", "@WebProfiler/Profiler/open.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\open.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

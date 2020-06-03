@@ -133,10 +133,6 @@ class __TwigTemplate_65be17e909800b641bc0dcf82d38054005128fd87c4e676a00c7596edd8
 
     <a href=\"{{ path('products_index') }}\">back to list</a>
 {% endblock %}
-<<<<<<< HEAD
 ", "products/new.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\products\\new.html.twig");
-=======
-", "products/new.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\products\\new.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

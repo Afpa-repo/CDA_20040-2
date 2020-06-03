@@ -79,10 +79,6 @@ class __TwigTemplate_957412bda07e3b2af86ca3b318329fbdf6491821dce02d73ebd48451657
 <?php printf('%s=\"%s\" ', \$view->escape(\$k), \$view->escape(\$v)) ?>
 <?php endif ?>
 <?php endforeach ?>
-<<<<<<< HEAD
 ", "@Framework/Form/attributes.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\attributes.html.php");
-=======
-", "@Framework/Form/attributes.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\attributes.html.php");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

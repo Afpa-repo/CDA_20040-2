@@ -99,10 +99,6 @@ class __TwigTemplate_04c58fffabd963b9e99783f018a9665b9479d839c7baab43677702efb5d
             </trace>
 {% endfor %}
         </traces>
-<<<<<<< HEAD
 ", "@Twig/Exception/traces.xml.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.xml.twig");
-=======
-", "@Twig/Exception/traces.xml.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.xml.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

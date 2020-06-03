@@ -2080,10 +2080,6 @@ class __TwigTemplate_81799613ca1a3ae86a49564d3cbcd0256953111081f08e255d9c542645b
         {{ tree.form_tree_details(childName, childData, forms_by_hash) }}
     {% endfor %}
 {% endmacro %}
-<<<<<<< HEAD
 ", "@WebProfiler/Collector/form.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\form.html.twig");
-=======
-", "@WebProfiler/Collector/form.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\form.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

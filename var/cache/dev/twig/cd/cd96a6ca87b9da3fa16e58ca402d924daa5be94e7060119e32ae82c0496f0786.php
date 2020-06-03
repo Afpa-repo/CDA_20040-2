@@ -973,10 +973,6 @@ class Theme {
         return hash >>> 0;
     }
 }
-<<<<<<< HEAD
 ", "@WebProfiler/Collector/time.js", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.js");
-=======
-", "@WebProfiler/Collector/time.js", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.js");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

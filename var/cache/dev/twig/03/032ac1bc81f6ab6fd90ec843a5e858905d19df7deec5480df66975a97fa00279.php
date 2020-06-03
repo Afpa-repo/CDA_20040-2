@@ -193,10 +193,6 @@ $context["name"], "profiler_markup_version" =>                 // line 17
     </a>
 </div>
 <!-- END of Symfony Web Debug Toolbar -->
-<<<<<<< HEAD
 ", "@WebProfiler/Profiler/toolbar.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar.html.twig");
-=======
-", "@WebProfiler/Profiler/toolbar.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

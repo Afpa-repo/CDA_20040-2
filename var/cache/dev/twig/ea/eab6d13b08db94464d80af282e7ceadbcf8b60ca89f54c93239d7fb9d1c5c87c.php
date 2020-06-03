@@ -299,10 +299,6 @@ class __TwigTemplate_77ff3546a664689911369ba8af90119b9bec6fd5b921ee2c2f741e58945
         {{- form_rest(form) -}}
     </table>
 {%- endblock form_widget_compound -%}
-<<<<<<< HEAD
 ", "form_table_layout.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bridge\\Resources\\views\\Form\\form_table_layout.html.twig");
-=======
-", "form_table_layout.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bridge\\Resources\\views\\Form\\form_table_layout.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

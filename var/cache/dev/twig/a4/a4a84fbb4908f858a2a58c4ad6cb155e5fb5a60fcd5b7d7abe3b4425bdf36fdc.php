@@ -220,10 +220,6 @@ a.doc:hover {
     top: -7em;
     visibility: hidden;
 }
-<<<<<<< HEAD
 ", "@WebProfiler/Profiler/open.css.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\open.css.twig");
-=======
-", "@WebProfiler/Profiler/open.css.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\open.css.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

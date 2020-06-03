@@ -128,7 +128,7 @@ class __TwigTemplate_3b972fbd45ea6140a85b9405448147b5b1445bc0f073f7d50a5018c9a8d
         // line 21
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 21, $this->source); })()), 'form_end');
         echo "
-
+<span class=\"ai-star-0\"></span>
 <script>
     \$(document).ready(function () {
         // you may need to change this code if you are not using Bootstrap Datepicker
@@ -184,7 +184,7 @@ class __TwigTemplate_3b972fbd45ea6140a85b9405448147b5b1445bc0f073f7d50a5018c9a8d
 {{ form_row(form.password) }}
 <button type=\"submit\" class=\"btn btn-primary\">S'enregistrer</button>
 {{ form_end(form) }}
-
+<span class=\"ai-star-0\"></span>
 <script>
     \$(document).ready(function () {
         // you may need to change this code if you are not using Bootstrap Datepicker
@@ -193,10 +193,6 @@ class __TwigTemplate_3b972fbd45ea6140a85b9405448147b5b1445bc0f073f7d50a5018c9a8d
         });
     });
 </script>
-<<<<<<< HEAD
 {% endblock %}", "security/register.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\security\\register.html.twig");
-=======
-{% endblock %}", "security/register.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\security\\register.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

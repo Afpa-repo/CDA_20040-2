@@ -205,10 +205,6 @@ class __TwigTemplate_def726e367fbe33e98a10542784eb5fa3aee68f0234499350a977985583
 
     {{ include('promotions/_delete_form.html.twig') }}
 {% endblock %}
-<<<<<<< HEAD
 ", "promotions/show.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\promotions\\show.html.twig");
-=======
-", "promotions/show.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\promotions\\show.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

@@ -1077,10 +1077,6 @@ class __TwigTemplate_79be6698361efe4024d5811c9ed98a7b74840b1c204034329d16578be68
         </span>
     {%- endif -%}
 {%- endblock form_help %}
-<<<<<<< HEAD
 ", "bootstrap_3_layout.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bridge\\Resources\\views\\Form\\bootstrap_3_layout.html.twig");
-=======
-", "bootstrap_3_layout.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bridge\\Resources\\views\\Form\\bootstrap_3_layout.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

@@ -413,10 +413,6 @@ class __TwigTemplate_2e057988624313619cfb3e5702598620bc1d91ffcf86def3608e9bdc818
         </div>
     {% endfor %}
 {% endblock %}
-<<<<<<< HEAD
 ", "@Debug/Profiler/dump.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\debug-bundle\\Resources\\views\\Profiler\\dump.html.twig");
-=======
-", "@Debug/Profiler/dump.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\debug-bundle\\Resources\\views\\Profiler\\dump.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

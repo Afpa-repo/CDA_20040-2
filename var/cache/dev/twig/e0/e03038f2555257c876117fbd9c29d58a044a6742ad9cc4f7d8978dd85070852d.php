@@ -65,10 +65,6 @@ class __TwigTemplate_efbf9e0cd7c7f439db5eb144fd22c1b1db739552ff00a7c3b63a0b2e40b
     {
         return new Source("id=\"<?php echo \$view->escape(\$id) ?>\" name=\"<?php echo \$view->escape(\$full_name) ?>\"<?php if (\$disabled): ?> disabled=\"disabled\"<?php endif ?>
 <?php echo \$attr ? ' '.\$view['form']->block(\$form, 'attributes') : '' ?>
-<<<<<<< HEAD
 ", "@Framework/Form/button_attributes.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\button_attributes.html.php");
-=======
-", "@Framework/Form/button_attributes.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\button_attributes.html.php");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

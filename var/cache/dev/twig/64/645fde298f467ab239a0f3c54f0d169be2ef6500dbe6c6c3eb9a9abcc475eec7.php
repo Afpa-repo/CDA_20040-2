@@ -73,10 +73,6 @@ class __TwigTemplate_e17b87339d30f6dfeea9aaef4c11acc2f1b5a0d18ea94e3c3b6e4c18f8b
     {
         return new Source("{% deprecated 'The template \"' ~ _self ~'\" is deprecated since Symfony 4.4, will be removed in 5.0.' %}
 {{ include('@Twig/Exception/error.xml.twig') }}
-<<<<<<< HEAD
 ", "@Twig/Exception/error.atom.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.atom.twig");
-=======
-", "@Twig/Exception/error.atom.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.atom.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

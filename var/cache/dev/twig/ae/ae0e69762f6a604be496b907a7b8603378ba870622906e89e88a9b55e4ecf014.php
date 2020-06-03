@@ -104,10 +104,6 @@ class __TwigTemplate_161038ec09cb22f3e8b1f6843544bde53738f6730ca63df16b3036c353b
   {{ include('@Twig/Exception/trace.txt.twig', { trace: trace }, with_context = false) }}
 {% endfor %}
 {% endif %}
-<<<<<<< HEAD
 ", "@Twig/Exception/traces.txt.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.txt.twig");
-=======
-", "@Twig/Exception/traces.txt.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.txt.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

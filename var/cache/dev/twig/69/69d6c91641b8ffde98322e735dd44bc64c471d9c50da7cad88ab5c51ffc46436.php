@@ -2601,10 +2601,6 @@ body.theme-light #collector-content .sf-dump-ellipsis-path { max-width: 5em; }
 body.theme-light #collector-content .sf-dump .trace li.selected {
     background: rgba(255, 255, 153, 0.5);
 }
-<<<<<<< HEAD
 ", "@WebProfiler/Profiler/profiler.css.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\profiler.css.twig");
-=======
-", "@WebProfiler/Profiler/profiler.css.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\profiler.css.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

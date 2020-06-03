@@ -1882,10 +1882,6 @@ class __TwigTemplate_1f51220e92e7f96f2c4d6b734d2e4344fbfb314828a2517b962862ede68
         </tbody>
     </table>
 {% endmacro %}
-<<<<<<< HEAD
 ", "@Doctrine/Collector/db.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
-=======
-", "@Doctrine/Collector/db.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

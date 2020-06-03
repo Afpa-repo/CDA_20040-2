@@ -75,10 +75,6 @@ class __TwigTemplate_09997ce1cdc18521c7cb32d4f2e93f93d4350190251f06394b2a749d32b
     <?php echo \$view['form']->block(\$form, 'form_rows') ?>
     <?php echo \$view['form']->rest(\$form) ?>
 </div>
-<<<<<<< HEAD
 ", "@Framework/Form/form_widget_compound.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_widget_compound.html.php");
-=======
-", "@Framework/Form/form_widget_compound.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_widget_compound.html.php");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

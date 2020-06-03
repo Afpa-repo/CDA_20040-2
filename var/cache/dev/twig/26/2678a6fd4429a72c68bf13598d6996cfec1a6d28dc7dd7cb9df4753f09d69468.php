@@ -204,10 +204,6 @@ class __TwigTemplate_ebc34e4f0423dea125b2b76c5be15f468a655b45cb5ba5c3f9226b76608
     </button>
 </form>
 {% endblock %}
-<<<<<<< HEAD
 ", "security/login.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\security\\login.html.twig");
-=======
-", "security/login.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\security\\login.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

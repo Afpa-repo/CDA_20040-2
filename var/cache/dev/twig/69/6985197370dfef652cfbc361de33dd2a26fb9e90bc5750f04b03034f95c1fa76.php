@@ -106,10 +106,6 @@ class __TwigTemplate_27e88746b60c565a99d5c5d85463294a013c7c5c66eb4cc0ddf9a0527b2
 {{ include('@Twig/Exception/traces.txt.twig', { exception: e }, with_context = false) }}
 
 {% endfor %}
-<<<<<<< HEAD
 ", "@Twig/Exception/exception.txt.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.txt.twig");
-=======
-", "@Twig/Exception/exception.txt.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.txt.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

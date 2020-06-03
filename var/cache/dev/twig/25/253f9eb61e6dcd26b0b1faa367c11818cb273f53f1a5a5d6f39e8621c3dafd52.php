@@ -95,10 +95,6 @@ class __TwigTemplate_8c253e8cfe3a72245e68ab20775d0adc928136794b71980ff05a2ee1b47
         ], \$date_pattern) ?>
     </div>
 <?php endif ?>
-<<<<<<< HEAD
 ", "@Framework/Form/date_widget.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\date_widget.html.php");
-=======
-", "@Framework/Form/date_widget.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\date_widget.html.php");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

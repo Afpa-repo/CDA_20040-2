@@ -764,10 +764,6 @@ class __TwigTemplate_c1d95cce7ce4c8db9a9f84f4b1b61ad5391acca5dd7f1c02a35747c3f3a
         </div>
     {% endfor %}
 {% endblock %}
-<<<<<<< HEAD
 ", "@WebProfiler/Collector/mailer.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
-=======
-", "@WebProfiler/Collector/mailer.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

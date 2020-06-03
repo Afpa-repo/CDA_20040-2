@@ -81,10 +81,6 @@ class __TwigTemplate_f19f32fe681dbd39a645849c33d16bda693789f9fe22a27545884f47843
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ promotion.promo_id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-<<<<<<< HEAD
 ", "promotions/_delete_form.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\promotions\\_delete_form.html.twig");
-=======
-", "promotions/_delete_form.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\promotions\\_delete_form.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

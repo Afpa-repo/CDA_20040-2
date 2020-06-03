@@ -1175,10 +1175,6 @@ class __TwigTemplate_e77df280a481b94360b98effbf54a0ba6b2141f7b049c8ba767b4047acc
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-<<<<<<< HEAD
 ", "@WebProfiler/Collector/request.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\request.html.twig");
-=======
-", "@WebProfiler/Collector/request.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\request.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

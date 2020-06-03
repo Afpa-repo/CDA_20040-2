@@ -77,10 +77,6 @@ class __TwigTemplate_970be586d417ff7b431edd5e81af8103489b660025f96fc1b56461c8aac
     : \$view['form']->humanize(\$name); } ?>
 <label<?php if (\$label_attr) { echo ' '.\$view['form']->block(\$form, 'attributes', ['attr' => \$label_attr]); } ?>><?php echo \$view->escape(false !== \$translation_domain ? \$view['translator']->trans(\$label, \$label_translation_parameters, \$translation_domain) : \$label) ?></label>
 <?php endif ?>
-<<<<<<< HEAD
 ", "@Framework/Form/form_label.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_label.html.php");
-=======
-", "@Framework/Form/form_label.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_label.html.php");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

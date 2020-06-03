@@ -135,10 +135,6 @@ class __TwigTemplate_52457ff80cd09980b7348e31eab409d1d5d2f0a893a1cd16237f57a08ee
         </div>
     </body>
 </html>
-<<<<<<< HEAD
 ", "@Twig/Exception/error.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.html.twig");
-=======
-", "@Twig/Exception/error.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

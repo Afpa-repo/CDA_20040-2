@@ -30,11 +30,11 @@ return [
     'group_show' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::show'], [], [['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
     'group_edit' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
     'group_delete' => [['group_id'], ['_controller' => 'App\\Controller\\GroupController::delete'], [], [['variable', '/', '[^/]++', 'group_id'], ['text', '/groups']], [], []],
-    'home' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/home']], [], []],
-    'products_new' => [[], ['_controller' => 'App\\Controller\\ProductsController::new'], [], [['text', '/new']], [], []],
-    'products_show' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::show'], [], [['variable', '/', '[^/]++', 'prod_id']], [], []],
-    'products_edit' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'prod_id']], [], []],
-    'products_delete' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::delete'], [], [['variable', '/', '[^/]++', 'prod_id']], [], []],
+    'home' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/home/home']], [], []],
+    'products_new' => [[], ['_controller' => 'App\\Controller\\ProductsController::new'], [], [['text', '/home/new']], [], []],
+    'products_show' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::show'], [], [['variable', '/', '[^/]++', 'prod_id'], ['text', '/home']], [], []],
+    'products_edit' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'prod_id'], ['text', '/home']], [], []],
+    'products_delete' => [['prod_id'], ['_controller' => 'App\\Controller\\ProductsController::delete'], [], [['variable', '/', '[^/]++', 'prod_id'], ['text', '/home']], [], []],
     'promotions_index' => [[], ['_controller' => 'App\\Controller\\PromotionsController::index'], [], [['text', '/promotions/']], [], []],
     'promotions_new' => [[], ['_controller' => 'App\\Controller\\PromotionsController::new'], [], [['text', '/promotions/new']], [], []],
     'promotions_show' => [['promo_id'], ['_controller' => 'App\\Controller\\PromotionsController::show'], [], [['variable', '/', '[^/]++', 'promo_id'], ['text', '/promotions']], [], []],
@@ -49,10 +49,5 @@ return [
     'register' => [[], ['_controller' => 'App\\Controller\\SecurityController::register'], [], [['text', '/register']], [], []],
     'token_validate' => [['token'], ['_controller' => 'App\\Controller\\SecurityController::validateToken'], [], [['variable', '/', '[^/]++', 'token'], ['text', '/confirm']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
-<<<<<<< HEAD
-=======
     'user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], []],
-    'index' => [[], ['_controller' => 'App\\Controller\\ProductsController::index'], [], [['text', '/']], [], []],
-    'logout' => [[], [], [], [['text', '/logout']], [], []],
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
 ];

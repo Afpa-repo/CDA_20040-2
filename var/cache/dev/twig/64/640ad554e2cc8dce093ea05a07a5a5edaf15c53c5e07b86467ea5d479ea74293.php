@@ -139,10 +139,6 @@ class __TwigTemplate_1871810cb0a9178cf04428cc250ada2011b3e309b5ec74e948e48fc71ca
     <button class=\"btn\">{{ button_label|default('Save') }}</button>
     {{ form_end(form) }}
 </div>
-<<<<<<< HEAD
 ", "products/_form.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\products\\_form.html.twig");
-=======
-", "products/_form.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\products\\_form.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

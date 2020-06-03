@@ -168,10 +168,6 @@ class __TwigTemplate_792c71f15d8f21ae9fe13c04cd4214ca9abba513aead5adfe4b63b53d9c
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: false }) }}
 {% endblock %}
-<<<<<<< HEAD
 ", "@WebProfiler/Collector/ajax.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\ajax.html.twig");
-=======
-", "@WebProfiler/Collector/ajax.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\ajax.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

@@ -75,10 +75,6 @@ class __TwigTemplate_c33d0f78c98e71348d524e6befc3eade89ec21fb19487dc7e371edc55b3
         <?php endforeach; ?>
     </ul>
 <?php endif ?>
-<<<<<<< HEAD
 ", "@Framework/Form/form_errors.html.php", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_errors.html.php");
-=======
-", "@Framework/Form/form_errors.html.php", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\form_errors.html.php");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

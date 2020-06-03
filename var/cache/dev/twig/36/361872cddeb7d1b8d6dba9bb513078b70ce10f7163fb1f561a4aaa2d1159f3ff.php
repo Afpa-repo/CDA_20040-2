@@ -76,11 +76,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
         <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
             <a class=\"navbar-brand\" href=\"";
         // line 14
-<<<<<<< HEAD
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-=======
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
         echo "\">B.A.D</a>
             <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor01\"
                 aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -97,11 +93,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
             // line 25
-<<<<<<< HEAD
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-=======
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
             echo "\">Vinyles</a>
                         </li>
                         <li class=\"nav-item\">
@@ -290,11 +282,7 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
                     {% if not is_granted('IS_AUTHENTICATED_FULLY') %}
                         
                         <li class=\"nav-item\">
-<<<<<<< HEAD
                             <a class=\"nav-link\" href=\"{{path(\"home\")}}\">Vinyles</a>
-=======
-                            <a class=\"nav-link\" href=\"{{path(\"index\")}}\">Vinyles</a>
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"{{path(\"register\")}}\">Inscription</a>
@@ -338,10 +326,6 @@ class __TwigTemplate_cd7715d02fe11c9bf330b021c3670eed5a05cd7d0b022ba3353b55b4c07
         </script>
     </body>
 </html>
-<<<<<<< HEAD
 ", "base.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\templates\\base.html.twig");
-=======
-", "base.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\templates\\base.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

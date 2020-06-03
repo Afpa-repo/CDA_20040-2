@@ -490,10 +490,6 @@ class __TwigTemplate_45be108b6c0fcee3fc18723a9be76bac56ba8bd215f05d4ea7a02414e77
         {% endif %}
     </div>
 </div>
-<<<<<<< HEAD
 ", "@Twig/Exception/exception.html.twig", "C:\\wamp64\\www\\CDA_20040-2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.html.twig");
-=======
-", "@Twig/Exception/exception.html.twig", "C:\\wamp64\\www\\fil rouge\\filrougeAFPA\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.html.twig");
->>>>>>> 2b087f82dea7f4670eea87e4f089a1253f0d0248
     }
 }

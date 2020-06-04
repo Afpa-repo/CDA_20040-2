@@ -6,7 +6,6 @@ use App\Entity\User;
 use App\Entity\Token;
 use App\Form\RegisterType;
 use App\Services\TokenSendler;
-use App\Repository\TokenRepository;
 use App\Security\LoginFormAuthenticator;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,7 +13,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
@@ -64,7 +62,7 @@ class SecurityController extends AbstractController
             $passwordEncoded = $passwordEncoder->encodePassword($user, $user->getPassword());
             $user->setPassword($passwordEncoded);
             //Attribution de rôle
-            $user->setRoles(['ROLE_ADMIN']);
+            $user->setRoles(['ROLE_USER']);
             // D'un token
             $token = new Token($user);
             // On persist le token
@@ -73,13 +71,13 @@ class SecurityController extends AbstractController
             $manager->flush();
             // Utilisation de la méthode du Services de mail
             $tokenSendler->sendToken($user, $token);
-
+            // Message 
             $this->addFlash(
                 'notice',
                 "Un email de confirmation vous a été envoyé"
             );
 
-            return $this->redirectToRoute('home');
+            return $this->redirectToRoute('products');
 
         }
         return $this->render('security/register.html.twig', [
@@ -103,7 +101,7 @@ class SecurityController extends AbstractController
                 'notice',
                 "Ce token est déjà validé !"
             );
-            return $this->redirectToRoute('home');
+            return $this->redirectToRoute('products');
         }
 
         if($token->isValid()) {

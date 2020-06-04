@@ -22,6 +22,7 @@ class TokenSendler
         
     }
     public function sendToken(User $user, Token $token){
+        
         $message = (new TemplatedEmail())
             ->from('noreply@bad-vinyl.com')
             ->to(new Address($user->getEmail()))
@@ -29,8 +30,11 @@ class TokenSendler
             )
                     ->htmlTemplate(
                         'emails/register.html.twig',
+                        
+                    )
+                    ->context(
                         ['token' => $token->getValue()]
-                    
+
                     );
             $this->mailer->send($message);
     }

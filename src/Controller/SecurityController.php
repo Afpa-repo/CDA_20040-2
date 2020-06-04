@@ -49,17 +49,29 @@ class SecurityController extends AbstractController
         UserPasswordEncoderInterface $passwordEncoder, 
         TokenSendler $tokenSendler
         ) {
+
+        // Création de l'utilisateur
         $user = new User();
+
+        // Création du formulaire d'inscription
         $form = $this->createForm(RegisterType::class, $user);
 
+
+// Si le formulaire est soumis et validé
         if($form->handleRequest($request)->isSubmitted() && $form->isValid()){
 
+// Encodage du password ...
             $passwordEncoded = $passwordEncoder->encodePassword($user, $user->getPassword());
             $user->setPassword($passwordEncoded);
+            //Attribution de rôle
             $user->setRoles(['ROLE_ADMIN']);
+            // D'un token
             $token = new Token($user);
+            // On persist le token
             $manager->persist($token);
+            //on enregistre le token et l'utilisateur en bd (cascade)
             $manager->flush();
+            // Utilisation de la méthode du Services de mail
             $tokenSendler->sendToken($user, $token);
 
             $this->addFlash(
@@ -78,22 +90,26 @@ class SecurityController extends AbstractController
 
 
     /**
-     * @Route("/confirm/{token}", name="token_validate")
+     * @Route("/confirm/{value}", name="token_validate")
      */
-    public function validateToken($token, TokenRepository $tokenRepository, EntityManagerInterface $manager, 
+    public function validateToken(Token $token, EntityManagerInterface $manager, 
     GuardAuthenticatorHandler $guardAuthenticatorHandler, LoginFormAuthenticator $loginFormAuthenticator, Request $request)
     {
 
-        $token = $tokenRepository->findOneBy(['value' => $token]);
-        if(null === $token){
-            throw new NotFoundHttpException();
-        }
+       
         $user = $token->getUser();
+        if($user->getEnable()){
+            $this->addFlash(
+                'notice',
+                "Ce token est déjà validé !"
+            );
+            return $this->redirectToRoute('home');
+        }
+
         if($token->isValid()) {
             $user = $token->getUser();
-
             $user->setEnable(true);
-            $manager->flush($user);
+            $manager->flush();
 
             return $guardAuthenticatorHandler->authenticateUserAndHandleSuccess(
                 $user,
@@ -102,11 +118,11 @@ class SecurityController extends AbstractController
                 'main'
             );
         }
-            $manager->remove($user);
+        // Remove du token ( remove l'utilisateur en même temps, cascade)
             $manager->remove($token);
             $this->addFlash(
                 'notice',
-                "Le token est expiré"
+                "Le token est expiré, inscrivez-vous de nouveau"
             );
             return $this->redirectToRoute('register');
     }

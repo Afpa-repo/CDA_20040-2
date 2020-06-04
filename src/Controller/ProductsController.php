@@ -11,13 +11,13 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/home")
+ * @Route("/products")
  */
 
 class ProductsController extends AbstractController
 {
     /**
-     * @Route("/home", name="home", methods={"GET"})
+     * @Route("/products", name="products", methods={"GET"})
      */
 
     public function index(ProductsRepository $productsRepository): Response

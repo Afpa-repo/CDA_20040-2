@@ -37,6 +37,7 @@ class Token
 
     public function __construct(User $user)
     {
+        
         $this->createdAt = new \DateTime();
         $this->user = $user;
         $this->value = md5(uniqid());

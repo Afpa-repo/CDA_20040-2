@@ -61,9 +61,7 @@ class ProductsController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{prod_id}/edit", name="products_edit", methods={"GET","POST"})
-     */
+
     public function edit(Request $request, Products $product): Response
     {
         $form = $this->createForm(ProductsType::class, $product);
@@ -81,9 +79,7 @@ class ProductsController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{prod_id}", name="products_delete", methods={"DELETE"})
-     */
+
     public function delete(Request $request, Products $product): Response
     {
         if ($this->isCsrfTokenValid('delete' . $product->getId(), $request->request->get('_token'))) {

@@ -8,33 +8,42 @@
     <table class="table">
         <tbody>
             <tr>
-                <th>Prod_id</th>
-                <td>{{ product.getId() }}</td>
+                <th>Photo</th>
+                <td><img src="{{ asset('images/vinylfilrouge/' ~ product.Photo.photoId ~ '.' ~ product.Photo.photoFormat)}}" class="cover"></td>
             </tr>
             <tr>
-                <th>Prod_name</th>
+                <th>Nom</th>
                 <td>{{ product.getProdName() }}</td>
             </tr>
             <tr>
-                <th>Prod_descr</th>
+                <th>Description</th>
                 <td>{{ product.getProdDescr() }}</td>
             </tr>
             <tr>
-                <th>Prod_price</th>
+                <th>Prix</th>
                 <td>{{ product.getProdPrice() }}</td>
             </tr>
             <tr>
-                <th>Prod_display</th>
-                <td>{{ product.getProdDisplay() ? 'Yes' : 'No' }}</td>
-            </tr>
-            <tr>
-                <th>Prod_stock</th>
+                <th>Stock restant</th>
                 <td>{{ product.getProdStock() }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('products_index') }}">back to list</a>
+    <table>
+        <thead>
+                <tr>
+                    <td>Non</td>
+                    <td>Note</td>
+                    <td>Commantaire</td>
+                </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <a href="{{ path('home') }}">back to list</a>
 
     <a href="{{ path('products_edit', {'prod_id': product.getId()}) }}">edit</a>
 

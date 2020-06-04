@@ -23,7 +23,7 @@
             {% if product.getProdDisplay() == 1 %}
                 <tr>
                     <td><img src="{{ asset('images/vinylfilrouge/' ~ product.Photo.getPhotoId() ~ '.' ~ product.Photo.getPhotoFormat())}}" class="cover"></td>
-                    <td>{{ product.getProdName() }}</td>
+                    <td>{{ product.prodName }}</td>
                     <td>{{ product.getProdDescr() }}</td>
                     <td>{{ product.getProdPrice() }}€</td>
                     <td>{{ product.getProdDisplay() ? 'Oui' : 'Non' }}</td>

@@ -39,6 +39,7 @@ class Token
     {
         $this->createdAt = new \DateTime();
         $this->user = $user;
+        $this->value = md5(uniqid());
     }
 
     public function getId(): ?int

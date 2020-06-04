@@ -20,21 +20,21 @@
         <tbody>
         {% for product in products %}
 
-            {% if product.getProdDisplay() == 1 %}
+            {% if product.prodDisplay == 1 %}
                 <tr>
-                    <td><img src="{{ asset('images/vinylfilrouge/' ~ product.Photo.getPhotoId() ~ '.' ~ product.Photo.getPhotoFormat())}}" class="cover"></td>
+                    <td><img src="{{ asset('images/vinylfilrouge/' ~ product.Photo.photoId ~ '.' ~ product.Photo.photoFormat)}}" class="cover"></td>
                     <td>{{ product.prodName }}</td>
-                    <td>{{ product.getProdDescr() }}</td>
-                    <td>{{ product.getProdPrice() }}€</td>
-                    <td>{{ product.getProdDisplay() ? 'Oui' : 'Non' }}</td>
-                    {% if product.getProdStock() == 0 %}
+                    <td>{{ product.prodDescr }}</td>
+                    <td>{{ product.prodPrice }}€</td>
+                    <td>{{ product.prodDisplay ? 'Oui' : 'Non' }}</td>
+                    {% if product.prodStock == 0 %}
                         <td>Produit Indisponible</td>
                     {% else %}
-                        <td>{{ product.getProdStock() }}</td>
+                        <td>{{ product.prodStock }}</td>
                     {% endif %}
                     <td>
                         <a href="{{ path('products_show', {'prod_id': product.getId()}) }}">Voir<i class="fas fa-eye"></i></a>&nbsp;&nbsp;
-                        {% if product.getProdStock() == 0 %}
+                        {% if product.prodStock == 0 %}
                     <td></td>
                 {% else %}
                     <a href="{{ path('cart_add', {'id' : product.getId()}) }}">Panier<i class="fas fa-edit"></i></a>

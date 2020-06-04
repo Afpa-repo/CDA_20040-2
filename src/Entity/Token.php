@@ -6,7 +6,7 @@ use App\Entity\User;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=TokenRepository::class)
+ * @ORM\Entity(repositoryClass="App\Repository\TokenRepository"))
  */
 class Token
 {

@@ -3,58 +3,67 @@
 {% block title %}Products index{% endblock %}
 
 {% block body %}
-    <h1>Products index</h1>
+<h1 class="m-5">Vinyles</h1>
 
-    <table class="table">
-        <thead>
-        <tr>
-            <th>#</th>
-            <th>Groupe</th>
-            <th>Nom</th>
-            <th>Genre</th>
-            <th>Description</th>
-            <th>Prix HT</th>
-            <th>Stock</th>
-            <th>Actions</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for product in products %}
-
+<div class="row no-gutters">
+    {% for product in products %}
+    <div class="col-12 col-lg-6 p-1">
+        <div class="card mb-3">
             {% if product.prodDisplay == 1 %}
-                <tr>
-                    <td><img src="{{ asset('images/vinylfilrouge/' ~ product.Photo.photoId ~ '.' ~ product.Photo.photoFormat)}}" class="cover"></td>
-                    <td>{{ product.group.groupName }}</td>
-                    <td>{{ product.prodName }}</td>
-                    <td>{{ product.category.catLibelle }}</td>
-                    <td>{{ product.prodDescr }}</td>
-                    <td>{{ product.prodPrice }}€</td>
-                    {% if product.prodStock == 0 %}
-                        <td>Produit Indisponible</td>
-                    {% else %}
-                        <td>{{ product.prodStock }}</td>
-                    {% endif %}
-                    <td>
-                        <a href="{{ path('products_show', {'prod_id': product.getId()}) }}"><i class="fas fa-eye"></i></a>&nbsp;&nbsp;
+            <div class="row no-gutters align-items-center p-2">
+                <div class="col-12 col-md-4">
+                    <img src="{{ asset('images/vinylfilrouge/' ~ product.Photo.photoId ~ '.' ~ product.Photo.photoFormat)}}"
+                        class="cover">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ product.prodName }}</h3>
+                        <p class="card-text">
+                        <div class="mb-2">Groupe : {{ product.group.groupName }}</div>
+                        <div>Genre : {{ product.category.catLibelle }}</div>
+                        <div class="mb-3">{{ product.prodDescr }}</div>
+                        <div class="mb-3">Prix HT : {{ product.prodPrice }}€</div>
                         {% if product.prodStock == 0 %}
-                    <td></td>
-                {% else %}
-                    <a href="{{ path('cart_add', {'id' : product.getId()}) }}"><i class="fas fa-cart-plus"></i></a>
-                    {% endif %}
-                    </td>
-                </tr>
-            {% else %}
-            {% endif %}
-        {% else %}
-            <tr>
-                <td colspan="7">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-    {# display navigation #}
-    <div class="navigation">
-        {{ knp_pagination_render(products) }}
+                        <div>Produit Indisponible</div>
+                        {% else %}
+                        <div>Quantité disponible : {{ product.prodStock }}</div>
+                        {% endif %}
+                        </p>
+                        <div>
+                            <a href="{{ path('products_show', {'prod_id': product.getId()}) }}"><i
+                                    class="fas fa-eye"></i></a>&nbsp;&nbsp;
+                            {% if product.prodStock == 0 %}
+
+                            {% else %}
+                            <a href="{{ path('cart_add', {'id' : product.getId()}) }}"><i
+                                    class="fas fa-cart-plus"></i></a>
+                            {% endif %}
+                        </div>
+                        {% else %}
+                        {% endif %}
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    {% endfor %}
+</div>
+
+
+{# display navigation #}
+<div class="navigation align-items-center">
+    {{ knp_pagination_render(products) }}
+</div>
+
+
+
+
+
+
+
+
+
 
 {% endblock %}

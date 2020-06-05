@@ -40,6 +40,7 @@ class SecurityController extends AbstractController
      * @Route("/register", name="register")
      */
     public function register(
+    
         Request $request, 
         EntityManagerInterface $manager, 
         GuardAuthenticatorHandler $guardAuthenticatorHandler, 
@@ -47,18 +48,18 @@ class SecurityController extends AbstractController
         UserPasswordEncoderInterface $passwordEncoder, 
         TokenSendler $tokenSendler
         ) {
-
-        // Création de l'utilisateur
-        $user = new User();
-
-        // Création du formulaire d'inscription
-        $form = $this->createForm(RegisterType::class, $user);
-
-
-// Si le formulaire est soumis et validé
-        if($form->handleRequest($request)->isSubmitted() && $form->isValid()){
-
-// Encodage du password ...
+            
+            // Création de l'utilisateur
+            $user = new User();
+            
+            // Création du formulaire d'inscription
+            $form = $this->createForm(RegisterType::class, $user);
+            
+            
+            // Si le formulaire est soumis et validé
+            if($form->handleRequest($request)->isSubmitted() && $form->isValid()){
+                
+                // Encodage du password ...
             $passwordEncoded = $passwordEncoder->encodePassword($user, $user->getPassword());
             $user->setPassword($passwordEncoded);
             //Attribution de rôle
@@ -76,13 +77,13 @@ class SecurityController extends AbstractController
                 'notice',
                 "Un email de confirmation vous a été envoyé"
             );
-
+            
             return $this->redirectToRoute('products');
-
+            
         }
         return $this->render('security/register.html.twig', [
             'form' => $form->createView()
-        ]);
+            ]);
 
         }
 

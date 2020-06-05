@@ -9,7 +9,9 @@
         <thead>
         <tr>
             <th>#</th>
+            <th>Groupe</th>
             <th>Nom</th>
+            <th>Genre</th>
             <th>Description</th>
             <th>Prix HT</th>
             <th>Stock</th>
@@ -22,7 +24,9 @@
             {% if product.prodDisplay == 1 %}
                 <tr>
                     <td><img src="{{ asset('images/vinylfilrouge/' ~ product.Photo.photoId ~ '.' ~ product.Photo.photoFormat)}}" class="cover"></td>
+                    <td>{{ product.group.groupName }}</td>
                     <td>{{ product.prodName }}</td>
+                    <td>{{ product.category.catLibelle }}</td>
                     <td>{{ product.prodDescr }}</td>
                     <td>{{ product.prodPrice }}€</td>
                     {% if product.prodStock == 0 %}

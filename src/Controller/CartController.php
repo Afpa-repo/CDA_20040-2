@@ -2,6 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Cart;
+use App\Entity\TypeAddress;
+use App\Entity\Address;
 use App\Entity\Products;
 use App\Repository\ProductsRepository;
 use Symfony\Component\HttpFoundation\Request;
@@ -11,6 +14,66 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class CartController extends AbstractController
 {
+
+    /**
+     * @Route("/commande", name="commande")
+     */
+public function comform(SessionInterface $Session)
+{
+    return $this->render("cart/commande.html.twig");
+}
+
+    /**
+     * @Route("/traitementCommande", name="traitementCommande")
+     */
+public function traitementCommande(SessionInterface $session, Request $request)
+{
+    //Livraison
+    $adresseLivraison = new Address();
+
+
+    $adresseLivraison->setAddressCity($request->get('ville_livraison'));
+    $adresseLivraison->setAddressCountry($request->get('pays_livraison'));
+    $adresseLivraison->setAddressPostalCode($request->get('codePostal_livraison'));
+    $adresseLivraison->setAddressStreet($request->get('adresse_livraison'));
+
+
+    $entityManager = $this->getDoctrine()->getManager();
+    $entityManager->persist($adresseLivraison);
+    $entityManager->flush();
+
+    //Facturation
+    $adresseFacturation = new Address();
+
+    $adresseFacturation->setAddressCity($request->get('ville_facturation'));
+    $adresseFacturation->setAddressCountry($request->get('pays_facturation'));
+    $adresseFacturation->setAddressPostalCode($request->get('codePostal_facturation'));
+    $adresseFacturation->setAddressStreet($request->get('adresse_facturation'));
+
+    $entityManager = $this->getDoctrine()->getManager();
+    $entityManager->persist($adresseFacturation);
+    $entityManager->flush();
+
+    $cart = $session->get('panier');
+    $cartShopping = new Cart();
+
+    $this ->getUser();
+    $user = $session->getId();
+    $nb = $user * 5;
+    $cartNumber = $user . $nb   ;
+    for ($item as $cart) {
+        $cartShopping->setCartCreateDate(new \DateTime());
+        $cartShopping->setTotalItem($item['quantity']);
+        $cartShopping->setCartNumber($cartNumber);
+        $cartShopping->setProducts()
+    }
+
+
+
+    return $this->redirectToRoute('commande');
+}
+
+
     /**
      * @Route("/cart", name="cart_index")
      */

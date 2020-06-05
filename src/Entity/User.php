@@ -156,6 +156,9 @@ class User implements UserInterface
         $this->user_register_date = new \DateTime();
     }
 
+    /**
+     * @see UserInterface
+     */
     public function getId(): ?int
     {
         return $this->user_id;

@@ -29,6 +29,12 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
+     * 
+     * @Assert\Regex(
+     *     pattern="/^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/",
+     *     message="Votre adresse Email n'est pas valide."
+     * )
+     * 
      */
     private $email;
 
@@ -49,6 +55,9 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=80)
+     * @Assert\Length(min=3, max=30, minMessage="Votre nom doit contenir au moins trois caractères"
+     * , maxMessage="Votre nom doit contenir moins de 30 caractères." )
+     * 
      * @Assert\Regex(
      *     pattern="/\d/",
      *     match=false,
@@ -59,6 +68,14 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=80)
+     * @Assert\Length(min=3, max=30, minMessage="Votre prénom doit contenir au moins trois caractères"
+     * , maxMessage="Votre prénom doit contenir moins de 30 caractères" )
+     * 
+     * @Assert\Regex(
+     *     pattern="/\d/",
+     * 
+     *     message="Votre prénom ne peut pas contenir de chiffre."
+     * )
      */
     private $user_firstname;
 
@@ -74,6 +91,13 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=10)
+     * @Assert\Regex(
+     *     pattern="/^(\d\d\s){4}(\d\d)$/",
+     * 
+     *     message="Votre numéro utilise des caractères non valide."
+     * )
+     * 
+     * 
      */
     private $user_phone;
 

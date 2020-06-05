@@ -20,10 +20,10 @@
 <tbody>
     {% for item in items %}
         <tr>
-            <td>{{ item.product.getProdName() }}</td>
-            <td id="prix">{{ item.product.getProdPrice() }}</td>
+            <td>{{ item.product.prodName }}</td>
+            <td id="prix">{{ item.product.prodPrice }}</td>
             <td> {{ item.quantity }}</td>
-            <td id="ttlitem">{{ item.product.getProdPrice() * item.quantity }}</td>
+            <td id="ttlitem">{{ item.product.prodPrice * item.quantity }}</td>
             <td>
                 <a href="{{ path('cart_remove', {'id': item.product.getId()})}}" class="btn btn-danger btn-sm">
                    <i class="fa fa-trash" aria-hidden="true"></i>

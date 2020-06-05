@@ -2,9 +2,10 @@
 
 namespace App\Repository;
 
+use Doctrine\ORM\Query;
 use App\Entity\Products;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
 /**
  * @method Products|null find($id, $lockMode = null, $lockVersion = null)
@@ -17,6 +18,15 @@ class ProductsRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Products::class);
+    }
+
+
+    // Fonction de pagination qui revoie la query
+    public function findAllWithPagination(): Query
+    {
+
+        return $this->createQueryBuilder('p')
+            ->getQuery();
     }
 
     // /**

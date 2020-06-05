@@ -9,16 +9,15 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class UserController extends AbstractController
-{
+class UserController extends AbstractController {
+
     /**
      * @Route("/user", name="user")
      */
-    
-    public function index(UserRepository $userRepository)
-    {
+    public function index(UserRepository $userRepository) {
         return $this->render('user/index.html.twig', [
-            'user' => $userRepository->findAll(),
+                    'user' => $userRepository->findAll(),
         ]);
     }
+
 }

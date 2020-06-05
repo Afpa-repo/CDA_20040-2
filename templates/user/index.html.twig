@@ -10,29 +10,24 @@
             <tr>
 
                 <th>mail</th>
-                <th>username</th>
-                <th>role</th>
                 <th>last name </th>
                 <th>first name</th>
                 <th>birthday</th>
-                <th>sexe</th>
                 <th>phone</th>
             </tr>
         </thead>
         <tbody>
-            {% for user in user %}
-                <tr>
-                    <td>{{ user.email }}</td>
-                    <td>{{ user.username}}</td>
-                    <td>{{ user.userlastname}}</td>
-                    <td>{{ user.userfirstname}}</td>
-                    <td>{{ user.userbirthday|date('d-m-Y')}}</td>
-                    <td>{{ user.userPhone}}</td>
-                    {#                <td>
-                                        <a href="{{ path('user_edit', {'user_id': user.getId()}) }}"><i class="fas fa-edit"></i></a>
-                                    </td>#}
-                </tr>
-            {% endfor %}
+
+            <tr>
+                <td>{{ app.user.email }}</td>
+                <td>{{ app.user.userlastname}}</td>
+                <td>{{ app.user.userfirstname}}</td>
+                <td>{{ app.user.userbirthday|date('d-m-Y')}}</td>
+                <td>{{ app.user.userPhone}}</td>
+                {#                <td>
+                                    <a href="{{ path('user_edit', {'user_id': user.getId()}) }}"><i class="fas fa-edit"></i></a>
+                                </td>#}
+            </tr>
         </tbody>
     </table>
 {% endblock %}

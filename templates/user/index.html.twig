@@ -8,7 +8,7 @@
     <table class="table">
         <thead>
             <tr>
-                
+
                 <th>mail</th>
                 <th>username</th>
                 <th>role</th>
@@ -20,19 +20,19 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>{{ user.email }}</td>
-                <td>{{ user.getUsername() }}</td>
-                <td>{{ user.getRoles() }}</td>
-                <td>{{ user.getUserLastname() }}</td>
-                <td>{{ user.getUserFirstname() }}</td>
-                <td>{{ user.getUserBirthday() }}</td>
-                <td>{{ user.getUserSexe() }}</td>
-                <td>{{ user.getUserPhone() }}</td>
-{#                <td>
-                    <a href="{{ path('user_edit', {'user_id': user.getId()}) }}"><i class="fas fa-edit"></i></a>
-                </td>#}
-            </tr>
+            {% for user in user %}
+                <tr>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.username}}</td>
+                    <td>{{ user.userlastname}}</td>
+                    <td>{{ user.userfirstname}}</td>
+                    <td>{{ user.userbirthday|date('d-m-Y')}}</td>
+                    <td>{{ user.userPhone}}</td>
+                    {#                <td>
+                                        <a href="{{ path('user_edit', {'user_id': user.getId()}) }}"><i class="fas fa-edit"></i></a>
+                                    </td>#}
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
 {% endblock %}

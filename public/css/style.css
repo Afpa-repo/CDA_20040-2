@@ -1,10 +1,45 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+/* inherit pour que tt les before et after
+ hérite du box-sizing du html
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    /* pour avoir 10px pour 1rem
+    dans les navigateurs 
+    l'écriture est de 16px de base
+    meilleur accéssibilité pour les navigateurs
+     lors de zoom. 10/16 = 0.625
+    */
+    font-size: 62.5%;    
+}
+
+body{
+    font-size: 1.6rem;  
+}
+
+
 .cover {
     width: 150px;
     height: 120px;
     object-fit: cover;
     /*La propriété CSS object-fit définit la façon dont le contenu d'un élément remplacé
        (<img> ou <video> par exemple) doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur*/
-
 }
 
+.filter {
+    display: block;
+    position: sticky;
+    top: 2rem;
+}
 

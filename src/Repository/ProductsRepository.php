@@ -2,7 +2,9 @@
 
 namespace App\Repository;
 
+
 use Doctrine\ORM\Query;
+use App\Data\SearchData;
 use App\Entity\Products;
 use Doctrine\Persistence\ManagerRegistry;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
@@ -18,6 +20,60 @@ class ProductsRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Products::class);
+    }
+
+
+
+    /**
+     * Undocumented function
+     * Récupérer les produits en lien avec une recherche
+     *
+     * @return product[]
+     */
+    public function findSearch(SearchData $search): array
+    {
+        // Requête de récupération des produits
+        $query = $this
+            ->createQueryBuilder('p')
+            ->select('c', 'p')
+            ->join('p.category', 'c');
+
+
+            // Si $search n'est pas vide on récupère la query 
+        if (!empty($search->q)) {
+            $query = $query
+                ->andWhere('p.prod_name LIKE :q')
+                ->setParameter('q', "%{$search->q}%");
+        }
+
+
+        if (!empty($search->min)) {
+            $query = $query
+                ->andWhere('p.prodPrice >= :min')
+                ->setParameter('min', $search->min);
+        }
+
+
+        if (!empty($search->max)) {
+            $query = $query
+                ->andWhere('p.prodPrice <= :max')
+                ->setParameter('max', $search->max);
+        }
+        if (!empty($search->promo)) {
+            $query = $query
+                ->andWhere('p.promo = 1');
+                
+        }
+        if (!empty($search->categories)) {
+            $query = $query
+                ->andWhere('product.category.cat_id IN (:categories')
+                ->setParameter('categories', $search->categories);
+                
+        }
+
+
+
+        return $query->getQuery()->getResult();
     }
 
 

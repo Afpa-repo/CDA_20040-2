@@ -61,11 +61,11 @@ public function traitementCommande(SessionInterface $session, Request $request)
     $user = $session->getId();
     $nb = $user * 5;
     $cartNumber = $user . $nb   ;
-    for ($item as $cart) {
+    foreach ($item as $cart) {
         $cartShopping->setCartCreateDate(new \DateTime());
         $cartShopping->setTotalItem($item['quantity']);
         $cartShopping->setCartNumber($cartNumber);
-        $cartShopping->setProducts()
+        $cartShopping->setProducts();
     }
 
 

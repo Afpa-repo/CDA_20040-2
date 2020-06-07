@@ -100,5 +100,10 @@ class Categories {
 
         return $this;
     }
+    // Fonction pour récupérer une catégorie sous forme de chaîne de caractère
+    public function __toString()
+    {
+        return $this->cat_libelle;
+    }
 
 }

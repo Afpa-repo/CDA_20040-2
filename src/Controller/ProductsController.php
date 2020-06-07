@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Data\SearchData;
 use App\Entity\Products;
 use App\Form\ProductsType;
+use App\Form\SearchType;
 use App\Repository\ProductsRepository;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,14 +25,22 @@ class ProductsController extends AbstractController
 
     public function index(ProductsRepository $productsRepository, PaginatorInterface $paginatorInterface, Request $request): Response
     {
+        // Initialisation des données de recherches
+        $data = new searchData();
+        //Création du formulaire avec la class SearchType avec en second paramètres les données
+        $form = $this->createForm(SearchType::class, $data);
+        // Gestion de la soumission du formulaire
+        $form->handleRequest($request);
+        $products = $productsRepository->findSearch($data);
         $products = $paginatorInterface->paginate(
-        $productsRepository->findAllWithPagination(), /* query NOT result */
-        $request->query->getInt('page', 1), /*page number*/
-        4 /*limit per page*/
-    );
-        
+            $productsRepository->findAllWithPagination(), /* query NOT result */
+            $request->query->getInt('page', 1), /*page number*/
+            8 /*limit per page*/
+        );
+
         return $this->render('products/index.html.twig', [
-            'products' => $products
+            'products' => $products,
+            'form' => $form->createView()
         ]);
     }
 

@@ -66,7 +66,7 @@ class ProductsRepository extends ServiceEntityRepository
         }
         if (!empty($search->categories)) {
             $query = $query
-                ->andWhere('product.category.cat_id IN (:categories')
+                ->andWhere('product.c.cat_id IN (:categories')
                 ->setParameter('categories', $search->categories);
                 
         }

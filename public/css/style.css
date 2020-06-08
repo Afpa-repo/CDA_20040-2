@@ -36,6 +36,23 @@ body{
     /*La propriété CSS object-fit définit la façon dont le contenu d'un élément remplacé
        (<img> ou <video> par exemple) doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur*/
 }
+/* .imgCart{
+    display: flex;
+    justify-content: right;
+} */
+.nav {
+    background-color: #f0ead6 !important;
+}
+.coverCart {
+    
+    max-width: 20px;
+    height: auto;
+    margin-left: 20rem;
+    float: left;
+    /* object-fit: cover; */
+    /*La propriété CSS object-fit définit la façon dont le contenu d'un élément remplacé
+       (<img> ou <video> par exemple) doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur*/
+}
 
 .filter {
     display: block;

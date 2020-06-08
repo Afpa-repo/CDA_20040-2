@@ -67,7 +67,7 @@ class Categories {
     public function setCatUpperCat(int $cat_upper_cat): self {
         $this->cat_upper_cat = $cat_upper_cat;
 
-        return this;
+        return $this;
     }
 
     /**

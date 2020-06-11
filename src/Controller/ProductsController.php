@@ -23,20 +23,24 @@ class ProductsController extends AbstractController
      * @Route("/products", name="products", methods={"GET"})
      */
 
-    public function index(ProductsRepository $productsRepository, PaginatorInterface $paginatorInterface, Request $request): Response
+    public function index(ProductsRepository $productsRepository, Request $request): Response
     {
         // Initialisation des données de recherches
         $data = new searchData();
+        $data->page = $request->get('page', 1);
+        
         //Création du formulaire avec la class SearchType avec en second paramètres les données
         $form = $this->createForm(SearchType::class, $data);
         // Gestion de la soumission du formulaire
         $form->handleRequest($request);
         $products = $productsRepository->findSearch($data);
-        $products = $paginatorInterface->paginate(
-            $productsRepository->findAllWithPagination(), /* query NOT result */
-            $request->query->getInt('page', 1), /*page number*/
-            8 /*limit per page*/
-        );
+        
+    
+        // $products = $paginatorInterface->paginate(
+        //     $productsRepository->findAllWithPagination(), /* query NOT result */
+        //     $request->query->getInt('page', 1), /*page number*/
+        //     8 /*limit per page*/
+        //);
 
         return $this->render('products/index.html.twig', [
             'products' => $products,

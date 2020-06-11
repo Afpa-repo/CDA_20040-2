@@ -7,6 +7,15 @@ use App\Entity\Categories;
 
 class SearchData
 {
+
+
+    /**
+     * @var int
+     */
+
+     public $page = 1;
+
+
     /**
      * Undocumented variable
      *

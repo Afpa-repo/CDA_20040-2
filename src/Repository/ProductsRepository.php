@@ -7,6 +7,8 @@ use Doctrine\ORM\Query;
 use App\Data\SearchData;
 use App\Entity\Products;
 use Doctrine\Persistence\ManagerRegistry;
+use Knp\Component\Pager\PaginatorInterface;
+use Knp\Component\Pager\Pagination\PaginationInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
 /**
@@ -17,9 +19,10 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
  */
 class ProductsRepository extends ServiceEntityRepository
 {
-    public function __construct(ManagerRegistry $registry)
+    public function __construct(ManagerRegistry$registry, PaginatorInterface $paginator)
     {
         parent::__construct($registry, Products::class);
+        $this->paginator = $paginator;
     }
 
 
@@ -28,9 +31,9 @@ class ProductsRepository extends ServiceEntityRepository
      * Undocumented function
      * Récupérer les produits en lien avec une recherche
      *
-     * @return product[]
+     * @return PaginationInterface
      */
-    public function findSearch(SearchData $search): array
+    public function findSearch(SearchData $search): PaginationInterface
     {
         // Requête de récupération des produits
         $query = $this
@@ -38,51 +41,47 @@ class ProductsRepository extends ServiceEntityRepository
             ->select('c', 'p')
             ->join('p.category', 'c');
 
-
+    //   dd($search);
             // Si $search n'est pas vide on récupère la query 
-        if (!empty($search->q)) {
+        if ($search->getQ() != '') {
+            // dd($search);
             $query = $query
                 ->andWhere('p.prod_name LIKE :q')
-                ->setParameter('q', "%{$search->q}%");
+                ->setParameter('q', "%{$search->getQ()}%");
         }
 
 
-        if (!empty($search->min)) {
+        if (!empty($search->getMin())) {
             $query = $query
-                ->andWhere('p.prodPrice >= :min')
-                ->setParameter('min', $search->min);
+                ->andWhere('p.prod_price >= :min')
+                ->setParameter('min', $search->getMin());
         }
 
 
-        if (!empty($search->max)) {
+        if (!empty($search->getMax())) {
             $query = $query
-                ->andWhere('p.prodPrice <= :max')
-                ->setParameter('max', $search->max);
+                ->andWhere('p.prod_price <= :max')
+                ->setParameter('max', $search->getMax());
         }
         if (!empty($search->promo)) {
             $query = $query
                 ->andWhere('p.promo = 1');
                 
         }
-        if (!empty($search->categories)) {
+        if (!empty($search->getCategories())) {
             $query = $query
-                ->andWhere('product.c.cat_id IN (:categories')
-                ->setParameter('categories', $search->categories);
+                ->andWhere('c.cat_id IN (:categories)')
+                ->setParameter('categories', $search->getCategories());
                 
         }
 
 
-
-        return $query->getQuery()->getResult();
-    }
-
-
-    // Fonction de pagination qui revoie la query
-    public function findAllWithPagination(): Query
-    {
-
-        return $this->createQueryBuilder('p')
-            ->getQuery();
+    $query = $query->getQuery();
+        return $this->paginator->paginate(
+            $query,
+            $search->page,
+            8
+        );
     }
 
     // /**
